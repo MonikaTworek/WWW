@@ -2,6 +2,14 @@
 require_once(__DIR__ . "/main.php");
 $lol = new MyPage("Studia", "studia", "Studia");
 echo $lol->Begin();
+require_once(__DIR__."/databases.php");
+$date=new databases();
+$r1=$date->read(1);
+$r2=$date->read(2);
+$r3=$date->read(3);
+$r4=$date->read(4);
+$r5=$date->read(5);
+$r6=$date->read(6);
 ?>
 
         <section id="s1">
@@ -36,7 +44,39 @@ echo $lol->Begin();
                     </div>
                 </div>
             </div>
-        
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Wzory</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>Analiza 1
+                            $$ \int_{a}^{b} f(g(t)) g'(t) dt = \int_{g(b)}^{g(a)} f(x) dx$$
+
+                            Algebra z Geometrią Analityczną
+                            $$ dim( \mathbf{V} ) = dim(ker( \mathbf{F} )) + dim(rng( \mathbf{F} ))$$
+
+                            Logika i Struktury Formalne
+                            $$ \forall _{X \subseteq \mathbf{R}} (|X| \leq \aleph v |X| = \mathfrak{c}$$
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>
+                            <?php
+                                foreach ($r1 as $comment)
+                                {
+                                    echo $comment["text"] . "<br>\n";
+                                }
+                            ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="s2">
@@ -68,6 +108,36 @@ echo $lol->Begin();
                                 Średnia to 5,18
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Wzory</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>Analiza 2
+                            $$ z-z_{0} = (x-x_{0}) \frac{\partial f}{ \partial x}(x_{0}, y_{0}) + (y-y_{0}) \frac{\partial f}{\partial y}(x_{0}, y_{0}) $$
+
+                            Matematyka Dyskretna
+                            $$x^{n} = \sum_{k=0}^{ \infty} \{ ^n _{k} \} x^{\underline{k}}$$
+
+                            Algebra Abstrakcyjna i kodowanie
+                            $$ \forall_{ x,y \in \overline{X} ^n} d_{n} (x,y) = | \{ k \in \{ 1, ... , n \} : x_{k} \neq y_{k} \} |$$
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>Sztuka walki wywodząca się z małej japońskiej wysepki - Okinawy. Przez zabranie wszelkiej broni
+                            (nawet noży do krojenia mięsa), wykształcił się sposób samoobrony przy użyciu tylko i wyłącznie
+                            ciała człowieka. Wraz z zakończeniem drugiej wojny światowej i powszechnej edukacji została rozpowszechniona
+                            najpierw na całą Japonię, a później na cały świat. Obecnie ma swoich zwolenników niemal w każdym kraju.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -107,6 +177,30 @@ echo $lol->Begin();
                     </div>
                 </div>
             </div>
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Wzory</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>Metody probabilistyczne i statystyczne
+                            $$ S_{n} = \sum_{ i=0}^{ \infty} \frac{i}{2^n} P[ \frac{i}{2^{n}} \leq x \leq \frac{i+1}{2^n}]$$
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>Sztuka walki wywodząca się z małej japońskiej wysepki - Okinawy. Przez zabranie wszelkiej broni
+                            (nawet noży do krojenia mięsa), wykształcił się sposób samoobrony przy użyciu tylko i wyłącznie
+                            ciała człowieka. Wraz z zakończeniem drugiej wojny światowej i powszechnej edukacji została rozpowszechniona
+                            najpierw na całą Japonię, a później na cały świat. Obecnie ma swoich zwolenników niemal w każdym kraju.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -139,6 +233,30 @@ echo $lol->Begin();
                                 Średnia to 4,73
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Wzory</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>Wprowadzenie do Teorii Grafów
+                            $$v(G) - e(G) + f(G) = 2 $$
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>Sztuka walki wywodząca się z małej japońskiej wysepki - Okinawy. Przez zabranie wszelkiej broni
+                            (nawet noży do krojenia mięsa), wykształcił się sposób samoobrony przy użyciu tylko i wyłącznie
+                            ciała człowieka. Wraz z zakończeniem drugiej wojny światowej i powszechnej edukacji została rozpowszechniona
+                            najpierw na całą Japonię, a później na cały świat. Obecnie ma swoich zwolenników niemal w każdym kraju.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -175,6 +293,30 @@ echo $lol->Begin();
                                 Średnia to 4,7
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Wzory</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>Wprowadzenie do Topologii i Teorii Miar
+                            $$\lim_{n \rightarrow \infty} inf \int_{E} f_{n} (x) d \mu (x) \ge \int_{E} \lim_{n \rightarrow \infty} f_{n} (x) d \mu x$$
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="scol-6-6">
+                <div class="titled-box">
+                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
+                    <input type="checkbox" id="show-modal1" role="button">
+                    <div class="titled-box-content">
+                        <p>Sztuka walki wywodząca się z małej japońskiej wysepki - Okinawy. Przez zabranie wszelkiej broni
+                            (nawet noży do krojenia mięsa), wykształcił się sposób samoobrony przy użyciu tylko i wyłącznie
+                            ciała człowieka. Wraz z zakończeniem drugiej wojny światowej i powszechnej edukacji została rozpowszechniona
+                            najpierw na całą Japonię, a później na cały świat. Obecnie ma swoich zwolenników niemal w każdym kraju.
+                        </p>
                     </div>
                 </div>
             </div>
