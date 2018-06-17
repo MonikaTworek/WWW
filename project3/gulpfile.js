@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var concat = require('gulp-concat');
 
 gulp.task('hello', function() {
     console.log('>>>>>>>>>>>');
@@ -27,8 +28,22 @@ gulp.task('callsass', function(){
 });
 
 gulp.task('obserwuj',function() {
-    gulp.watch('scss/*.scss', ['callsass'])
+    gulp.watch('SASS/*.sass', ['callsass'])
         .on('change', function(event) {
             console.log('File ' + event.path + ' was ' + event.type);}
         );
+});
+
+gulp.task('styles', function() {
+    gulp.src('SASS/**/*.sass')
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(concat('styles.min.css'))
+        .pipe(gulp.dest('./css/'));
+});
+
+gulp.task('lol', function() {
+    gulp.src('SASS/**/*.sass')
+        .pipe(sass({outputStyle: 'normal'}))
+        .pipe(concat('other.css'))
+        .pipe(gulp.dest('./css/'));
 });

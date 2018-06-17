@@ -3,13 +3,112 @@ require_once(__DIR__ . "/main.php");
 $lol = new MyPage("Studia", "studia", "Studia");
 echo $lol->Begin();
 require_once(__DIR__."/databases.php");
-$date=new databases();
-$r1=$date->read(1);
-$r2=$date->read(2);
-$r3=$date->read(3);
-$r4=$date->read(4);
-$r5=$date->read(5);
-$r6=$date->read(6);
+$date = new databases();
+
+
+$is_form_filled = isset($_POST["nick"]);
+$is_form_filled = $is_form_filled && isset($_POST["comment"]);
+$is_form_filled = $is_form_filled && isset($_POST["captcha_hash"]);
+$is_form_filled = $is_form_filled && isset($_POST["captcha_result"]);
+$is_form_filled = $is_form_filled && isset($_POST["semestr"]);
+$condition = isset($_POST["captcha_result"]) && $_POST["captcha_hash"] == hash("sha256",$_POST["captcha_result"]);
+
+
+if ($is_form_filled && $condition) {
+    $date->insert($_POST["semestr"], $_POST["nick"], $_POST["comment"]);
+}
+
+$r = array();
+$r[1]=$date->read(1);
+$r[2]=$date->read(2);
+$r[3]=$date->read(3);
+$r[4]=$date->read(4);
+$r[5]=$date->read(5);
+$r[6]=$date->read(6);
+
+
+function displayComments($sem_number, $all_comment_data)
+{
+    $begin = <<<EOS
+<div class="scol-6-6">
+<div class="titled-box2">
+    <label for="show-modal0" class="titled-box-name">Komentarze</label>
+    <input type="checkbox" id="show-modal1" role="button">
+    <div class="titled-box-content">
+        <p>
+EOS;
+    $end = <<<EOS
+        </p></div></div></div>
+EOS;
+
+    $form_begin = <<<EOS
+<form action="university.php" method="post">
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="nick" placeholder="Nick">                            
+            </td>
+            <td>
+                <input type="text" name="comment" placeholder="Tekst">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+EOS;
+    $form_middle = <<<EOS
+            </td>
+            <td>   
+                <input type="text" name="captcha_result" placeholder="Wynik">
+            </td>
+        </tr>
+        <tr>
+            <td>
+EOS;
+$form_end = <<<EOS
+            </td>
+        </tr>
+    </table>
+</form>
+EOS;
+
+    $rand1 = rand(-5, 5);
+    $rand2 = rand(-5, 5);
+    $rand3 = rand(-10, 10);
+    $rand4 = rand(-10, 10);
+
+    $captch = <<<EOS
+        $$  det \\left( \\begin{array}{cc}
+            2^{ $rand1 } & 2^{ $rand2 }i \\\
+            $rand4 i & $rand3 
+            \\end{array} \\right)$$
+EOS;
+
+    $temp_result = pow(2, $rand1) * $rand3 + pow(2, $rand2) * $rand4;
+    $captcha_hash = hash("sha256", $temp_result);
+
+
+    $result = $begin;
+
+    $comments = $all_comment_data[$sem_number];
+    foreach ($comments as $comment)
+    {
+        $result .= $comment["nick"];
+        $result .= ": ";
+        $result .= $comment["text"] . "<br>\n";
+    }
+
+    $result .= $form_begin;
+    $result .= $captch;
+//    $result .= $temp_result;
+    $result .= $form_middle;
+    $result .= "<input type='hidden' name='semestr' value='". $sem_number ."' />";
+    $result .= "<input type='hidden' name='captcha_hash' value='". $captcha_hash ."' />";
+    $result .= "<a class=\"button col-3\" onclick=\"document.forms[". ($sem_number - 1) ."].submit();\">Dodaj</a>";
+    $result .= $form_end;
+    $result .= $end;
+    return $result;
+}
+
 ?>
 
         <section id="s1">
@@ -44,39 +143,25 @@ $r6=$date->read(6);
                     </div>
                 </div>
             </div>
+
             <div class="scol-6-6">
-                <div class="titled-box">
+                <div class="titled-box2">
                     <label for="show-modal0" class="titled-box-name">Wzory</label>
                     <input type="checkbox" id="show-modal1" role="button">
                     <div class="titled-box-content">
-                        <p>Analiza 1
-                            $$ \int_{a}^{b} f(g(t)) g'(t) dt = \int_{g(b)}^{g(a)} f(x) dx$$
-
-                            Algebra z Geometrią Analityczną
+                        <p>Algebra z Geometrią Analityczną
                             $$ dim( \mathbf{V} ) = dim(ker( \mathbf{F} )) + dim(rng( \mathbf{F} ))$$
 
                             Logika i Struktury Formalne
                             $$ \forall _{X \subseteq \mathbf{R}} (|X| \leq \aleph v |X| = \mathfrak{c}$$
+
+                            Analiza 1
+                            $$ \int_{a}^{b} f(g(t)) g'(t) dt = \int_{g(b)}^{g(a)} f(x) dx$$
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="scol-6-6">
-                <div class="titled-box">
-                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
-                    <input type="checkbox" id="show-modal1" role="button">
-                    <div class="titled-box-content">
-                        <p>
-                            <?php
-                                foreach ($r1 as $comment)
-                                {
-                                    echo $comment["text"] . "<br>\n";
-                                }
-                            ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <?php echo displayComments(1, $r); ?>
         </section>
 
         <section id="s2">
@@ -111,10 +196,11 @@ $r6=$date->read(6);
                     </div>
                 </div>
             </div>
+
             <div class="scol-6-6">
-                <div class="titled-box">
-                    <label for="show-modal0" class="titled-box-name">Wzory</label>
-                    <input type="checkbox" id="show-modal1" role="button">
+                <div class="titled-box2">
+                    <label for="show-modal3" class="titled-box-name">Wzory</label>
+                    <input type="checkbox" id="show-modal3" role="button">
                     <div class="titled-box-content">
                         <p>Analiza 2
                             $$ z-z_{0} = (x-x_{0}) \frac{\partial f}{ \partial x}(x_{0}, y_{0}) + (y-y_{0}) \frac{\partial f}{\partial y}(x_{0}, y_{0}) $$
@@ -128,21 +214,8 @@ $r6=$date->read(6);
                     </div>
                 </div>
             </div>
-            <div class="scol-6-6">
-                <div class="titled-box">
-                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
-                    <input type="checkbox" id="show-modal1" role="button">
-                    <div class="titled-box-content">
-                        <p>Sztuka walki wywodząca się z małej japońskiej wysepki - Okinawy. Przez zabranie wszelkiej broni
-                            (nawet noży do krojenia mięsa), wykształcił się sposób samoobrony przy użyciu tylko i wyłącznie
-                            ciała człowieka. Wraz z zakończeniem drugiej wojny światowej i powszechnej edukacji została rozpowszechniona
-                            najpierw na całą Japonię, a później na cały świat. Obecnie ma swoich zwolenników niemal w każdym kraju.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <?php echo displayComments(2, $r); ?>
         </section>
-
 
         <section id="s3">            
             <div class="section-title">
@@ -178,7 +251,7 @@ $r6=$date->read(6);
                 </div>
             </div>
             <div class="scol-6-6">
-                <div class="titled-box">
+                <div class="titled-box2">
                     <label for="show-modal0" class="titled-box-name">Wzory</label>
                     <input type="checkbox" id="show-modal1" role="button">
                     <div class="titled-box-content">
@@ -188,21 +261,8 @@ $r6=$date->read(6);
                     </div>
                 </div>
             </div>
-            <div class="scol-6-6">
-                <div class="titled-box">
-                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
-                    <input type="checkbox" id="show-modal1" role="button">
-                    <div class="titled-box-content">
-                        <p>Sztuka walki wywodząca się z małej japońskiej wysepki - Okinawy. Przez zabranie wszelkiej broni
-                            (nawet noży do krojenia mięsa), wykształcił się sposób samoobrony przy użyciu tylko i wyłącznie
-                            ciała człowieka. Wraz z zakończeniem drugiej wojny światowej i powszechnej edukacji została rozpowszechniona
-                            najpierw na całą Japonię, a później na cały świat. Obecnie ma swoich zwolenników niemal w każdym kraju.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <?php echo displayComments(3, $r); ?>
         </section>
-
 
         <section id="s4">
             <div class="section-title">
@@ -237,7 +297,7 @@ $r6=$date->read(6);
                 </div>
             </div>
             <div class="scol-6-6">
-                <div class="titled-box">
+                <div class="titled-box2">
                     <label for="show-modal0" class="titled-box-name">Wzory</label>
                     <input type="checkbox" id="show-modal1" role="button">
                     <div class="titled-box-content">
@@ -247,21 +307,8 @@ $r6=$date->read(6);
                     </div>
                 </div>
             </div>
-            <div class="scol-6-6">
-                <div class="titled-box">
-                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
-                    <input type="checkbox" id="show-modal1" role="button">
-                    <div class="titled-box-content">
-                        <p>Sztuka walki wywodząca się z małej japońskiej wysepki - Okinawy. Przez zabranie wszelkiej broni
-                            (nawet noży do krojenia mięsa), wykształcił się sposób samoobrony przy użyciu tylko i wyłącznie
-                            ciała człowieka. Wraz z zakończeniem drugiej wojny światowej i powszechnej edukacji została rozpowszechniona
-                            najpierw na całą Japonię, a później na cały świat. Obecnie ma swoich zwolenników niemal w każdym kraju.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <?php echo displayComments(4, $r); ?>
         </section>
-
 
         <section id="s5">
             <div class="section-title">
@@ -297,7 +344,7 @@ $r6=$date->read(6);
                 </div>
             </div>
             <div class="scol-6-6">
-                <div class="titled-box">
+                <div class="titled-box2">
                     <label for="show-modal0" class="titled-box-name">Wzory</label>
                     <input type="checkbox" id="show-modal1" role="button">
                     <div class="titled-box-content">
@@ -307,21 +354,10 @@ $r6=$date->read(6);
                     </div>
                 </div>
             </div>
-            <div class="scol-6-6">
-                <div class="titled-box">
-                    <label for="show-modal0" class="titled-box-name">Komentarze</label>
-                    <input type="checkbox" id="show-modal1" role="button">
-                    <div class="titled-box-content">
-                        <p>Sztuka walki wywodząca się z małej japońskiej wysepki - Okinawy. Przez zabranie wszelkiej broni
-                            (nawet noży do krojenia mięsa), wykształcił się sposób samoobrony przy użyciu tylko i wyłącznie
-                            ciała człowieka. Wraz z zakończeniem drugiej wojny światowej i powszechnej edukacji została rozpowszechniona
-                            najpierw na całą Japonię, a później na cały świat. Obecnie ma swoich zwolenników niemal w każdym kraju.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <?php echo displayComments(5, $r); ?>
         </section>
     </section>
+
 
 <?php
 echo $lol->End();

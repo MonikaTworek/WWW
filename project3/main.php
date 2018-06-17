@@ -92,16 +92,14 @@ class MyPage
         $s .= "<title>" . $this->Title . "</title>\n";
         $s .= "<meta name='author' content='Monika Tworek'>\n";
         $s .= "<meta name='viewport' content = 'width=device-width, initial-scale=1.0'/>\n";
-        $s .= "<link rel='stylesheet' href='reset.css'>\n";
-        $s .= "<link rel='stylesheet' href='grid.css'>\n";
-        $s .= "<link rel='stylesheet' href='main.css'>\n";
-        $s .= "<link rel='stylesheet' href='articles.css'>\n";
+        $s .= "<link rel='stylesheet' href='css/styles.min.css'>\n";
         $s .= "<link href=\"https://fonts.googleapis.com/css?family=Lobster%7CMontserrat\" rel=\"stylesheet\">\n";
         $s .= "</head>\n";
         $current = basename($_SERVER['REQUEST_URI']);
         $path = (string)str_replace("php", "jpg", $current);
-        echo "<script>console.log( 'Debug Objects: " . $path . "' );</script>";
+        $s .= "<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>";
         $s .= "<body style=\"background-image: url('$path ');\">\n";
+        $s .= "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});</script>";
         $s .= $this->Generate_menu();
         $s .= (string)str_replace(["{{ID}}", "{{CONTENT}}"], [$this->Id, $this->Content], $GREETING_TMPL);
         return $s;
@@ -110,6 +108,7 @@ class MyPage
     public function End()
     {
         $s = "</section>\n";
+        $s .= "<script src='./load.js'></script>";
         $s = "</body>\n";
         $s .= "</html>";
         return $s;
