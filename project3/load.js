@@ -14,7 +14,6 @@ function toDataUrl(url, callback) {
 
 window.onload = function () {
     if (localStorage) {
-
         var img = document.getElementById('myImage');
         if (img) {
             var data = localStorage.getItem('myImage');

@@ -1,5 +1,6 @@
 <?php
 require_once(__DIR__ . "/main.php");
+session_start();
 $lol = new MyPage("Studia", "studia", "Studia");
 echo $lol->Begin();
 require_once(__DIR__."/databases.php");
@@ -99,7 +100,6 @@ EOS;
 
     $result .= $form_begin;
     $result .= $captch;
-//    $result .= $temp_result;
     $result .= $form_middle;
     $result .= "<input type='hidden' name='semestr' value='". $sem_number ."' />";
     $result .= "<input type='hidden' name='captcha_hash' value='". $captcha_hash ."' />";

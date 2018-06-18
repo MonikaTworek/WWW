@@ -78,7 +78,6 @@ class MyPage
         $this->Title = $Title;
         $this->Id = $id;
         $this->Content = $content;
-
     }
 
     public function Begin()
