@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://kuula.co/share/7lzx2?fs=1&vr=0&thumbs=1&chromeless=0&logo=0&enablejs=1 -->
+<html lang"en"="" class="js webkit no-ie no-firefox no-safari-desktop no-ios no-ipad win no-android no-vrbrowser css3d csstransitions cssanimations css2d no-touch no-pointer canvas history webrtc webgl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Kuula</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
+
+<!--<base href="/">--><base href=".">
+
+
+
+
+<link rel="icon" href="https://static.kuula.io/prod/assets/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="https://static.kuula.io/prod/assets/favicon.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./viewer-442.css">
+
+</head>
+<body virtualscroll="" class="embed">
+
+<noscript>Javascript needs to be enabled to run this page. Click <a href="/unsupported">here</a> to learn more.</noscript>
+<!--[if lte IE 9]>
+	<h1>You need a modern browser to run this page. Click <a href="/unsupported">here</a> to learn more.</h1>
+<![endif]-->
+
+<div class="templates">
+	<!--# addoncard #-->
+<div id="addoncard">
+    <article>
+        <div class="close-btn"><span class="sps close-black"></span></div>
+        <div class="wrapper">
+            <div class="media"></div>
+            <div class="content"></div>
+        </div>
+    </article>
+</div></div>
+
+<div class="fs">
+
+	<div class="sphere"><canvas width="0" height="0" class="grab" style="width: 0px; height: 0px;"></canvas></div>
+	<div class="image" style="display: none;"></div>
+
+	<div class="preloader" style="display: none;">
+		<svg width="30px" height="30px" class="spin s1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+			<circle cx="75" cy="75" r="50" stroke-dasharray="169 113" stroke="#ffffff" fill="none" stroke-width="8"></circle>
+		</svg>
+		<svg width="30px" height="30px" class="spin s2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+			<circle cx="75" cy="75" r="50" stroke-dasharray="169 113" stroke="#ffffff" fill="none" stroke-width="8"></circle>
+		</svg>
+	</div>
+
+	<div class="not-found">
+		<h2>Not found :(</h2>
+		<p>Sorry, but the post you are looking for does not exist or is inaccessible due to privacy level.</p>
+		<p>Meanwhile, why not <a href="https://kuula.co/explore/" target="_blank">explore great 360 photos</a> now?</p>
+		<img src="./logo.svg">
+	</div>
+
+	<a target="_blank" class="link-back" style="display: block; width: 70px; margin: 6px; opacity: 1;" href="https://kuula.co/about">
+		<img src="./logo.svg" style="display: block;">
+	</a>
+
+	<div class="play-button" style="display: none;"><span>360°</span></div>	
+	<div class="inst" style="display: block; transition: -webkit-transform 600ms ease-out 200ms, opacity 600ms ease-out 200ms; transform: translateZ(0px); opacity: 1;">
+		<span class="desktop-only" style="margin-bottom: 6px; opacity: 1;">Click &amp; drag to look around</span>
+		<span class="touch-only">Swipe to look around</span>
+	</div>	
+
+	<div class="gallery">
+		<ul class="dots"></ul>
+
+		<div class="thumbs">
+			<ul></ul>
+
+			<svg class="thumbs-show" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="4 4 24 24">
+				<path fill="#fff" d="M20.914 9.914l-2.829-2.829-8.914 8.914 8.914 8.914 2.828-2.828-6.086-6.086z"></path>
+			</svg>
+			
+			<svg class="thumbs-hide" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="4 4 24 24">
+				<path fill="#fff" d="M20.914 9.914l-2.829-2.829-8.914 8.914 8.914 8.914 2.828-2.828-6.086-6.086z"></path>
+			</svg>
+
+			<div class="next-thumb">
+				<svg class="thumbs-hide" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="4 4 24 24">
+					<path fill="#fff" d="M20.914 9.914l-2.829-2.829-8.914 8.914 8.914 8.914 2.828-2.828-6.086-6.086z"></path>
+				</svg>
+			</div>
+
+			<div class="prev-thumb">
+				<svg class="thumbs-hide" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="4 4 24 24">
+					<path fill="#fff" d="M20.914 9.914l-2.829-2.829-8.914 8.914 8.914 8.914 2.828-2.828-6.086-6.086z"></path>
+				</svg>
+			</div>
+
+			<div class="desc">
+				<div class="desc-text"></div>
+			</div>
+
+			<div class="num"></div>
+		</div>
+	</div>
+
+	<svg class="prev" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+		<path fill="#444" d="M20.914 9.914l-2.829-2.829-8.914 8.914 8.914 8.914 2.828-2.828-6.086-6.086z"></path>
+	</svg>
+
+	<svg class="next" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+		<path fill="#444" d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
+	</svg>
+
+	<article class="info" style="transform: translateZ(0px); transition: -webkit-transform 200ms cubic-bezier(0, 0.63, 0.64, 1) 0ms; display: none;">
+		<a class="user" target="_blank" href="https://kuula.co/profile/JacekCichon">
+			<span class="icon" style="background-image: url(&quot;https://files.kuula.io/users/jacekcichon-icon.jpg&quot;);"></span>
+			<span class="name">Jacek Cichoń</span>
+		</a>
+
+		<div class="desc">Lecture at Wrocław University of Technology</div>		
+	</article>
+
+	<div class="buttons" style="display: block; margin: 6px; opacity: 1;">
+		<div class="drawer" style="display: block;">INFO</div>
+		<div class="spl vr" style="display: none;"></div>
+		<div class="spl fullscreen" style="display: block;"></div>
+	</div>
+
+	<div class="ios-close-btn">
+		<span class="sps close-white"></span>
+	</div>
+
+	<div class="fs-disabled-info">Fullscreen is disabled on this page.<br>Please <a href="https://kuula.co/post/7lzx2" target="_blank">go here</a> if you want to enjoy this photo in fullscreen mode.<button>OK</button></div>
+
+	<div class="vr-rotate-info" style="display: none; visibility: hidden;">Please rotate the device into landscape mode and insert into your VR headset.<button>OK</button></div>
+
+	<div class="debug">
+
+</div>
+
+<script async="" src="./analytics.js.pobrane"></script><script type="text/javascript">window.KUULA_POST={id:"7lzx2",data:"eyJzdGF0dXMiOjAsInBheWxvYWQiOnsiaWQiOiI3bHp4MiIsInV1aWQiOiI1YWRhLTA3NGEtMDU4OC04OTExIiwiZGVzY3JpcHRpb24iOiJMZWN0dXJlIGF0IFdyb2NcdTAxNDJhdyBVbml2ZXJzaXR5IG9mIFRlY2hub2xvZ3kiLCJjb3ZlciI6IjAxIiwidmlld3MiOjc2OCwicHJpdmFjeSI6InB1YmxpYyIsImZlYXR1cmVkIjoiMCIsInRpbnkiOiIxIiwiY3JlYXRlZCI6IjE1MjQyMzgyMzgiLCJ1c2VyIjp7ImlkIjoiMTA3NzciLCJuYW1lIjoiSmFjZWtDaWNob24iLCJ0eXBlIjoiMCIsImRpc3BsYXluYW1lIjoiSmFjZWsgQ2ljaG9cdTAxNDQiLCJwaWN0dXJlIjoiMSIsIndlYnNpdGUiOiJodHRwOlwvXC9jcy5wd3IuZWR1LnBsXC9jaWNob25cLyIsInNldHRpbmdzIjpudWxsLCJ1cmwiOiJodHRwczpcL1wva3V1bGEuY29cL3Byb2ZpbGVcL0phY2VrQ2ljaG9uIn0sIm4iOiIxNDU5OTUiLCJwaG90b3MiOlt7ImlkIjoiMTQ2MDExIiwibmFtZSI6IjAxIiwic2l6ZXMiOlsiNzc3NiIsIjQwOTYiXSwib3B0aW9ucyI6eyJoZWFkaW5nIjoxLjU3MDc5NjMyNjc5NDksInJvbGwiOjAsInBpdGNoIjowLCJjcm9wIjpmYWxzZSwiZmxhdCI6ZmFsc2UsInpvb20iOjAsInBpdGNoTGltaXQiOjAsImxlbnNmbGFyZSI6MCwiZ2xhcmUiOjAuMSwic3VuSW50ZW5zaXR5IjowLjEsInRpbnlSb3QiOjAsInRpbnlTY2FsZSI6MC41LCJ0aW55QnVsZ2UiOjAuNSwidGlueUludmVydCI6MCwidGlueU9mZnNldFgiOjAsInRpbnlPZmZzZXRZIjowLCJ0aW55U2F2ZWQiOmZhbHNlLCJzdW4iOm51bGwsImZpbHRlciI6Im5vbmUiLCJmaWx0ZXJpbnRlbnNpdHkiOjEsImZvcm1hdCI6ImpwZyIsInNob3dJbmZvIjpmYWxzZSwic2hvd0xvY2F0aW9uIjp0cnVlLCJsb2NhdGlvbiI6InNrd2VyIEthemltaWVyemEgSWRhc3pld3NraWVnbywgV3JvY1x1MDE0MmF3LCBQb2xza2EiLCJsYXRsbmciOnsibGF0Ijo1MS4xMSwibG5nIjoxNy4wNTgwNTU1NTU1NTZ9LCJpbmZvIjpudWxsfSwiYWRkb25zIjoiW10iLCJ4bXAiOiI8eDp4bXBtZXRhIHhtbG5zOng9XCJhZG9iZTpuczptZXRhXC9cIiB4OnhtcHRrPVwiWE1QIENvcmUgNS41LjBcIj4gPHJkZjpSREYgeG1sbnM6cmRmPVwiaHR0cDpcL1wvd3d3LnczLm9yZ1wvMTk5OVwvMDJcLzIyLXJkZi1zeW50YXgtbnMjXCI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PVwiXCIgeG1sbnM6R1Bhbm89XCJodHRwOlwvXC9ucy5nb29nbGUuY29tXC9waG90b3NcLzEuMFwvcGFub3JhbWFcL1wiIEdQYW5vOlByb2plY3Rpb25UeXBlPVwiZXF1aXJlY3Rhbmd1bGFyXCIgR1Bhbm86Q2FwdHVyZVNvZnR3YXJlPVwiU2Ftc3VuZyBHZWFyIDM2MCBNYW5hZ2VyIFNhbXN1bmcgR2VhciAzNjAgTWFuYWdlciAxLjEuMDAuNVwiIEdQYW5vOlN0aXRjaGluZ1NvZnR3YXJlPVwiU2Ftc3VuZyBHZWFyIDM2MCBNYW5hZ2VyIFNhbXN1bmcgR2VhciAzNjAgTWFuYWdlciAxLjEuMDAuNVwiIEdQYW5vOlVzZVBhbm9yYW1hVmlld2VyPVwiVHJ1ZVwiIEdQYW5vOkNyb3BwZWRBcmVhSW1hZ2VXaWR0aFBpeGVscz1cIjc3NzZcIiBHUGFubzpDcm9wcGVkQXJlYUltYWdlSGVpZ2h0UGl4ZWxzPVwiMzg4OFwiIEdQYW5vOkZ1bGxQYW5vV2lkdGhQaXhlbHM9XCI3Nzc2XCIgR1Bhbm86RnVsbFBhbm9IZWlnaHRQaXhlbHM9XCIzODg4XCIgR1Bhbm86Q3JvcHBlZEFyZWFMZWZ0UGl4ZWxzPVwiMFwiIEdQYW5vOkNyb3BwZWRBcmVhVG9wUGl4ZWxzPVwiMFwiIEdQYW5vOlBvc2VIZWFkaW5nRGVncmVlcz1cIjBcIiBHUGFubzpQb3NlUGl0Y2hEZWdyZWVzPVwiMFwiIEdQYW5vOlBvc2VSb2xsRGVncmVlcz1cIjBcIiBHUGFubzpJbml0aWFsVmlld0hlYWRpbmdEZWdyZWVzPVwiMFwiIEdQYW5vOkluaXRpYWxWaWV3UGl0Y2hEZWdyZWVzPVwiMFwiIEdQYW5vOkluaXRpYWxWaWV3Um9sbERlZ3JlZXM9XCIwXCJcLz4gPFwvcmRmOlJERj4gPFwveDp4bXBtZXRhPiJ9XSwibGlrZXMiOjAsImNvbW1lbnRzIjowLCJ3aG9saWtlZCI6W10sImRlY29kZWRJZCI6MTQ1OTk1fSwiYWN0aW9uIjoiZ2V0In0="};window.KUULA_COLLECTION={};</script>
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73999210-2', 'auto');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript" src="./viewer-442.js.pobrane"></script>
+
+<script type="text/javascript">
+	var p = { debug: false, build: "442", sk: "pk_live_M2YkrkTIU88huAUx71X3qTax", fb: "952160754853921" };
+	var c = getKuulaConfig(p);
+	PSH.onData(c);
+</script>
+
+
+
+
+</div></body></html>

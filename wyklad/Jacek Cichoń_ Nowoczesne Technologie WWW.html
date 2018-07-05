@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://cs.pwr.edu.pl/cichon/2017_18_b/WWW.php -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Jacek Cichoń: Nowoczesne Technologie WWW</title>
+  <meta name="description" content="Wykład z Nowoczesnych Technologii WWW dla studentów informatyki WPPT PWr prowadzony w roku akademickim 2017/18">
+  <meta name="keywords" content="Politechnika Wrocławska, WPPT, Katedra Informatyki, Jacek Cichoń, Wrocław University of Science and Technology, mathematics, computer science, set theory, matematyka, teoria mnogości, informatyka, HTML5, CSS3, JavaScript, PHP">  
+  <link rel="icon" type="image/x-icon" href="http://cs.pwr.edu.pl/cichon/images/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="http://cs.pwr.edu.pl/cichon/images/icons/apple-touch-icon-iphone-60x60-precomposed.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://cs.pwr.edu.pl/cichon/images/icons/apple-touch-icon-ipad-76x76-precomposed.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://cs.pwr.edu.pl/cichon/images/icons/apple-touch-icon-iphone-retina-120x120-precomposed.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://cs.pwr.edu.pl/cichon/images/icons/apple-touch-icon-ipad-retina-152x152-precomposed.png">		
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jacek Cichoń">
+  <link rel="manifest" href="http://cs.pwr.edu.pl/cichon/2017_18_b/manifest.json">
+  <meta name="theme-color" content="#518EC4">
+  <link href="./Jacek Cichoń_ Nowoczesne Technologie WWW_files/HomePage.css" rel="stylesheet">
+<script async="" src="./Jacek Cichoń_ Nowoczesne Technologie WWW_files/analytics.js.pobrane"></script><script src="./Jacek Cichoń_ Nowoczesne Technologie WWW_files/app.js.pobrane"></script>
+  <script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, 
+    CommonHTML: { linebreaks: { automatic: true } }, 
+    "HTML-CSS": { linebreaks: { automatic: true } }, 
+    SVG: { linebreaks: { automatic: true } } 
+  })
+  </script>
+  <!--script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script-->
+  <script async="" src="./Jacek Cichoń_ Nowoczesne Technologie WWW_files/MathJax.js.pobrane"></script>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax_LineBox {display: table!important}
+.MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Main-bold; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Main-italic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Math-italic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Caligraphic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=2.7.1') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?V=2.7.1') format('opentype')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">@font-face {font-family: MathJax_AMS; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff?V=2.7.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf?V=2.7.1') format('opentype')}
+</style></head>
+<body><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+<div class="container">
+<header class="row" id="pageheader">
+	<div id="logopwr">
+		<img src="./Jacek Cichoń_ Nowoczesne Technologie WWW_files/LogoPWr.jpg" alt="Logo Politechniki Wrocławskiej">
+	</div>
+	<div id="logo">
+		<h1 id="titleJCI">Jacek Cichoń</h1>
+		<p id="subtitle">Katedra Informatyki<br>Wydział Podstawowych Problemów Techniki Politechniki Wrocławskiej</p>
+	</div>
+</header>
+<nav><div class="row" id="innerlinks"><ul>
+<li><a href="http://cs.pwr.edu.pl/cichon/index.php">Strona główna</a></li>
+<li><a href="http://cs.pwr.edu.pl/cichon/lectures.php">Moje zajęcia</a></li>
+</ul></div></nav>
+
+<div class="row">		
+<div class="panel">
+	<h1>Modern WEB Technologies</h1>
+	<p>
+	Wykład przeznaczony jest dla studentów II roku I stopnia Informatyki na WPPT.
+	Odbywa się w czwartki w godz. 18:55 - 20:30 w sali 1.31/C-13. Na stronie tej znajdziesz informacje o zasadach zaliczenia, realizowanym materiale, literaturze oraz listę zadań.
+	</p>
+</div>
+</div>
+
+
+<div class="row">		
+
+<div class="panel">
+<h2>Literatura</h2>
+<ol>
+	<li><cite>Introducing HTML5</cite>, Bruce Lawson and Remy Sharp, New Riders 2011</li>
+	<li>
+	  <cite>JavaScript: The Definitive Guide</cite>, David Flanagan, Sixth Edition-O'Reilly Media, 201
+	</li>
+	
+	<li><cite>Eloquent JavaScript A Modern Introduction to Programming</cite>, Marijn Haverbeke</li>
+    <li>
+	  <cite>Beginning PHP and MySQL: From Novice to Professional, Fourth Edition</cite>,  W. Jason Gilmore, Springer, 2010
+	</li>	
+	<li><cite>SASS and Compass in Action</cite>, Wynn Netherland, ..., Manning, 2013</li> 
+	<li><a href="http://www.w3schools.com/">W3Schools.com</a></li>
+	<li><a href="https://validator.w3.org/">Walidator WWW</a></li>
+	<li><a href="https://jigsaw.w3.org/css-validator/">Walidator CSS</a></li>
+	<li>Link do dobrego stylu <a href="https://github.com/murtaugh/HTML5-Reset">"reset"</a></li>
+	<li>Koła kolorów: <a href="https://color.adobe.com/">Adobe Color CC</a>,
+	<a href="http://paletton.com/">Paletton - The Color Scheme Designer</a></li>
+	<li><a href="https://closure-compiler.appspot.com/home">Google closure compiler</a></li>
+	<li><a href="http://www.jslint.com/">JS lint</a></li>
+  <li>Strona do testowania dostępności: <a href="http://wave.webaim.org/">http://wave.webaim.org/</a>
+	</li><li>Pytania do mnie związane z kursem: <a href="http://cs.pwr.edu.pl/cichon/QandA.php" class="QandA">Q&amp;A</a></li>
+</ol>
+<h2>Materiały do nauczenia się</h2>
+<ol>
+	<li>w3schools: <a href="http://www.w3schools.com/css/css_boxmodel.asp">CSS Box model</a>: 
+	zróbcie wszystkie zadania z tej strony</li>
+	<li>w3schools: <a href="http://www.w3schools.com/cssref/css_selectors.asp">Selektory CSS</a></li>
+	<li>w3schools: <a href="http://www.w3schools.com/php/default.asp">Podstawy PHP</a></li>
+  <li>Obrazki na ćwiczenia <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/images.zip">images.zip</a></li>
+</ol>
+</div>
+
+<section class="panel">
+<h2>Zasady zaliczania kursu</h2>
+<p>
+Będziecie mieli do zrealizowania trzy projekty. 
+Oceniana będzie jakość kodów (html, css, skrypty) oraz poprawność graficzna i typograficzna przedstawionych stron. 
+Ocena końcowa będzie obliczana za pomocą wzoru
+<span class="MathJax_Preview" style="color: inherit; display: none;"></span><div class="MathJax_Display" style="text-align: center;"><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" style="text-align: center; position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;&amp;#x22C5;&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo&gt;&amp;#x22C5;&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo&gt;&amp;#x22C5;&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;mn&gt;9&lt;/mn&gt;&lt;/mfrac&gt;&lt;mtext&gt;&amp;#xA0;&lt;/mtext&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 11.939em; display: inline-block;"><span style="display: inline-block; position: relative; width: 9.787em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(0.771em, 1009.74em, 3.128em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mfrac" id="MathJax-Span-3"><span style="display: inline-block; position: relative; width: 9.07em; height: 0px; margin-right: 0.105em; margin-left: 0.105em;"><span style="position: absolute; clip: rect(3.179em, 1008.97em, 4.306em, -999.997em); top: -4.659em; left: 50%; margin-left: -4.454em;"><span class="mrow" id="MathJax-Span-4"><span class="mn" id="MathJax-Span-5" style="font-family: MathJax_Main;">2</span><span class="mo" id="MathJax-Span-6" style="font-family: MathJax_Main; padding-left: 0.207em;">⋅</span><span class="msubsup" id="MathJax-Span-7" style="padding-left: 0.207em;"><span style="display: inline-block; position: relative; width: 1.027em; height: 0px;"><span style="position: absolute; clip: rect(3.384em, 1000.51em, 4.152em, -999.997em); top: -3.993em; left: 0em;"><span class="mi" id="MathJax-Span-8" style="font-family: MathJax_Math-italic;">x</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; top: -3.84em; left: 0.566em;"><span class="mn" id="MathJax-Span-9" style="font-size: 70.7%; font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span></span></span><span class="mo" id="MathJax-Span-10" style="font-family: MathJax_Main; padding-left: 0.207em;">+</span><span class="mn" id="MathJax-Span-11" style="font-family: MathJax_Main; padding-left: 0.207em;">3</span><span class="mo" id="MathJax-Span-12" style="font-family: MathJax_Main; padding-left: 0.207em;">⋅</span><span class="msubsup" id="MathJax-Span-13" style="padding-left: 0.207em;"><span style="display: inline-block; position: relative; width: 1.027em; height: 0px;"><span style="position: absolute; clip: rect(3.384em, 1000.51em, 4.152em, -999.997em); top: -3.993em; left: 0em;"><span class="mi" id="MathJax-Span-14" style="font-family: MathJax_Math-italic;">x</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; top: -3.84em; left: 0.566em;"><span class="mn" id="MathJax-Span-15" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span></span></span><span class="mo" id="MathJax-Span-16" style="font-family: MathJax_Main; padding-left: 0.207em;">+</span><span class="mn" id="MathJax-Span-17" style="font-family: MathJax_Main; padding-left: 0.207em;">4</span><span class="mo" id="MathJax-Span-18" style="font-family: MathJax_Main; padding-left: 0.207em;">⋅</span><span class="msubsup" id="MathJax-Span-19" style="padding-left: 0.207em;"><span style="display: inline-block; position: relative; width: 1.027em; height: 0px;"><span style="position: absolute; clip: rect(3.384em, 1000.51em, 4.152em, -999.997em); top: -3.993em; left: 0em;"><span class="mi" id="MathJax-Span-20" style="font-family: MathJax_Math-italic;">x</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; top: -3.84em; left: 0.566em;"><span class="mn" id="MathJax-Span-21" style="font-size: 70.7%; font-family: MathJax_Main;">3</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; clip: rect(3.179em, 1000.46em, 4.152em, -999.997em); top: -3.327em; left: 50%; margin-left: -0.254em;"><span class="mn" id="MathJax-Span-22" style="font-family: MathJax_Main;">9</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; clip: rect(0.873em, 1009.07em, 1.232em, -999.997em); top: -1.278em; left: 0em;"><span style="display: inline-block; overflow: hidden; vertical-align: 0em; border-top: 1.3px solid; width: 9.07em; height: 0px;"></span><span style="display: inline-block; width: 0px; height: 1.078em;"></span></span></span></span><span class="mtext" id="MathJax-Span-23" style="font-family: MathJax_Main;">&nbsp;</span><span class="mo" id="MathJax-Span-24" style="font-family: MathJax_Main;">,</span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.934em; border-left: 0px solid; width: 0px; height: 2.628em;"></span></span></nobr><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mfrac><mrow><mn>2</mn><mo>⋅</mo><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mn>3</mn><mo>⋅</mo><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mn>4</mn><mo>⋅</mo><msub><mi>x</mi><mn>3</mn></msub></mrow><mn>9</mn></mfrac><mtext>&nbsp;</mtext><mo>,</mo></math></span></span></div><script type="math/tex; mode=display" id="MathJax-Element-1">
+  \frac{2 \cdot x_1 +3 \cdot x_2 + 4 \cdot x_3 }{9}~,
+</script>
+gdzie <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-25" style="width: 4.818em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.947em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.642em, 1003.95em, 2.615em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-26"><span class="msubsup" id="MathJax-Span-27"><span style="display: inline-block; position: relative; width: 1.027em; height: 0px;"><span style="position: absolute; clip: rect(3.384em, 1000.51em, 4.152em, -999.997em); top: -3.993em; left: 0em;"><span class="mi" id="MathJax-Span-28" style="font-family: MathJax_Math-italic;">x</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; top: -3.84em; left: 0.566em;"><span class="mn" id="MathJax-Span-29" style="font-size: 70.7%; font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span></span></span><span class="mo" id="MathJax-Span-30" style="font-family: MathJax_Main;">,</span><span class="msubsup" id="MathJax-Span-31" style="padding-left: 0.156em;"><span style="display: inline-block; position: relative; width: 1.027em; height: 0px;"><span style="position: absolute; clip: rect(3.384em, 1000.51em, 4.152em, -999.997em); top: -3.993em; left: 0em;"><span class="mi" id="MathJax-Span-32" style="font-family: MathJax_Math-italic;">x</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; top: -3.84em; left: 0.566em;"><span class="mn" id="MathJax-Span-33" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span></span></span><span class="mo" id="MathJax-Span-34" style="font-family: MathJax_Main;">,</span><span class="msubsup" id="MathJax-Span-35" style="padding-left: 0.156em;"><span style="display: inline-block; position: relative; width: 1.027em; height: 0px;"><span style="position: absolute; clip: rect(3.384em, 1000.51em, 4.152em, -999.997em); top: -3.993em; left: 0em;"><span class="mi" id="MathJax-Span-36" style="font-family: MathJax_Math-italic;">x</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; top: -3.84em; left: 0.566em;"><span class="mn" id="MathJax-Span-37" style="font-size: 70.7%; font-family: MathJax_Main;">3</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.309em; border-left: 0px solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>x</mi><mn>3</mn></msub></math></span></span><script type="math/tex" id="MathJax-Element-2">x_1, x_2, x_3</script> są ocenami z kolejnych projektów.
+</p>
+
+<h3>Testy z roku 2015/2016</h3>
+<ul class="circle">
+<li><a href="http://cs.pwr.edu.pl/cichon/2015_16_b/WWW/test/testA-ans.pdf" class="pdfbutton">wariant A</a></li>
+<li><a href="http://cs.pwr.edu.pl/cichon/2015_16_b/WWW/test/testB-ans.pdf" class="pdfbutton">wariant B</a></li>
+</ul>
+</section>
+
+<section class="panel">
+<h2>Zadanie na laboratorium przed pierwszym wykładem</h2>
+<p>
+Spróbuj, w dowolny sposób, zbudować taką mniej więcej stronę - wizytówkę (kod html i css mają się zawierać w jednym pliku):
+</p>
+<img src="./Jacek Cichoń_ Nowoczesne Technologie WWW_files/FirstPage.png" alt="Pierwsza strona">
+<p>
+i przepuść ją przez walidatory HTML oraz CSS (linki są na górze tej strony). Tak długo modyfikuj stronę aż wyeliminujesz wszystkie błędy i ostrzeżenia<br>
+Spróbuj możliwie krytycznie ocenić stronę z tego obrazka - są na niej dwa ewidentne błędy kompozycyjne i jeden mniej ewidentny.
+</p>
+</section>
+
+<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; /&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-38" style="width: 0em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(3.845em, 1000em, 4.152em, -999.997em); top: -3.993em; left: 0em;"><span class="mrow" id="MathJax-Span-39"></span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.128em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"></math></span></span><script type="math/tex" id="MathJax-Element-3">
+  \def\RR{\mathbb{R}}
+  \def\QQ{\mathbb{Q}}
+  \def\ZZ{\mathbb{Z}}
+  \def\CC{\mathbb{C}}  
+  \def\NN{\mathbb{N}}
+  \def\IFF{\leftrightarrow}
+</script>
+
+<div class="panel">
+<p>
+Do realizacji zadań związanych z budowanymi stronami WWW na razie nie stosujemy żadnych narzędzi ani bibliotek czy też frameworków (czyli - bez bootstrapa, bez jQuery itp). 
+Korzystamy tylko z Notepad++ lub z Sublime Text. 
+</p>
+
+<h2>Zadania</h2>
+<ol>
+<li>Silne składowe spójne:
+  <ol>
+  <li>Na zbiorze <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;Z&lt;/mi&gt;&lt;/mrow&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-40" style="width: 0.822em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.669em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.693em, 1000.62em, 2.666em, -999.997em); top: -2.508em; left: 0em;"><span class="mrow" id="MathJax-Span-41"><span class="texatom" id="MathJax-Span-42"><span class="mrow" id="MathJax-Span-43"><span class="mi" id="MathJax-Span-44" style="font-family: MathJax_AMS;">Z</span></span></span></span><span style="display: inline-block; width: 0px; height: 2.513em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow class="MJX-TeXAtom-ORD"><mi mathvariant="double-struck">Z</mi></mrow></math></span></span><script type="math/tex" id="MathJax-Element-4">\ZZ</script> określamy relację <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;&amp;#x2192;&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;&amp;#x2194;&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;|&lt;/mo&gt;&lt;/mrow&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-45" style="width: 8.251em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.765em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.335em, 1006.66em, 2.666em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-46"><span class="mo" id="MathJax-Span-47" style="font-family: MathJax_Main;">(</span><span class="mi" id="MathJax-Span-48" style="font-family: MathJax_Math-italic;">a</span><span class="mo" id="MathJax-Span-49" style="font-family: MathJax_Main; padding-left: 0.259em;">→</span><span class="mi" id="MathJax-Span-50" style="font-family: MathJax_Math-italic; padding-left: 0.259em;">b</span><span class="mo" id="MathJax-Span-51" style="font-family: MathJax_Main;">)</span><span class="mo" id="MathJax-Span-52" style="font-family: MathJax_Main; padding-left: 0.259em;">↔</span><span class="mo" id="MathJax-Span-53" style="font-family: MathJax_Main; padding-left: 0.259em;">(</span><span class="mi" id="MathJax-Span-54" style="font-family: MathJax_Math-italic;">a</span><span class="texatom" id="MathJax-Span-55"><span class="mrow" id="MathJax-Span-56"><span class="mo" id="MathJax-Span-57" style="font-family: MathJax_Main;">|</span></span></span><span class="mi" id="MathJax-Span-58" style="font-family: MathJax_Math-italic;">b</span><span class="mo" id="MathJax-Span-59" style="font-family: MathJax_Main;">)</span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.372em; border-left: 0px solid; width: 0px; height: 1.378em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">→</mo><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">↔</mo><mo stretchy="false">(</mo><mi>a</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>b</mi><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-5">(a\to b) \IFF (a|b)</script>. Wyznacz silne składowe spójne w grafie <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-6-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mi mathvariant=&quot;double-struck&quot;&gt;Z&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;&amp;#x2192;&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-60" style="width: 3.537em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.871em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.591em, 1002.77em, 2.923em, -999.997em); top: -2.508em; left: 0em;"><span class="mrow" id="MathJax-Span-61"><span class="mo" id="MathJax-Span-62" style="font-family: MathJax_Main;">(</span><span class="texatom" id="MathJax-Span-63"><span class="mrow" id="MathJax-Span-64"><span class="mi" id="MathJax-Span-65" style="font-family: MathJax_AMS;">Z</span></span></span><span class="mo" id="MathJax-Span-66" style="font-family: MathJax_Main;">,</span><span class="mo" id="MathJax-Span-67" style="font-family: MathJax_Main; padding-left: 0.156em;">→</span><span class="mo" id="MathJax-Span-68" style="font-family: MathJax_Main;">)</span></span><span style="display: inline-block; width: 0px; height: 2.513em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.372em; border-left: 0px solid; width: 0px; height: 1.378em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mrow class="MJX-TeXAtom-ORD"><mi mathvariant="double-struck">Z</mi></mrow><mo>,</mo><mo stretchy="false">→</mo><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-6">(\ZZ,\to)</script>.
+  </li><li>Niech <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-7-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-69" style="width: 0.976em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.771em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.437em, 1000.77em, 2.41em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-70"><span class="mi" id="MathJax-Span-71" style="font-family: MathJax_Math-italic;">U<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.105em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 1.003em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>U</mi></math></span></span><script type="math/tex" id="MathJax-Element-7">U</script> i <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-8-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-72" style="width: 0.976em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.771em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.437em, 1000.77em, 2.41em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-73"><span class="mi" id="MathJax-Span-74" style="font-family: MathJax_Math-italic;">V<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.207em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 1.003em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi></math></span></span><script type="math/tex" id="MathJax-Element-8">V</script> będą silnymi składowymi spójnymi skierowanego grafu. 
+Pokaż, że <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-9-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-75" style="width: 3.537em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.871em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.437em, 1002.87em, 2.41em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-76"><span class="mi" id="MathJax-Span-77" style="font-family: MathJax_Math-italic;">U<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.105em;"></span></span><span class="mo" id="MathJax-Span-78" style="font-family: MathJax_Main; padding-left: 0.259em;">=</span><span class="mi" id="MathJax-Span-79" style="font-family: MathJax_Math-italic; padding-left: 0.259em;">V<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.207em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 1.003em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>U</mi><mo>=</mo><mi>V</mi></math></span></span><script type="math/tex" id="MathJax-Element-9">U=V</script> lub <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-10-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;mo&gt;&amp;#x2229;&lt;/mo&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;&amp;#x2205;&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-80" style="width: 5.433em; display: inline-block;"><span style="display: inline-block; position: relative; width: 4.46em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.335em, 1004.41em, 2.513em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-81"><span class="mi" id="MathJax-Span-82" style="font-family: MathJax_Math-italic;">U<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.105em;"></span></span><span class="mo" id="MathJax-Span-83" style="font-family: MathJax_Main; padding-left: 0.207em;">∩</span><span class="mi" id="MathJax-Span-84" style="font-family: MathJax_Math-italic; padding-left: 0.207em;">V<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.207em;"></span></span><span class="mo" id="MathJax-Span-85" style="font-family: MathJax_Main; padding-left: 0.259em;">=</span><span class="mi" id="MathJax-Span-86" style="font-family: MathJax_Main; padding-left: 0.259em;">∅</span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.184em; border-left: 0px solid; width: 0px; height: 1.191em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>U</mi><mo>∩</mo><mi>V</mi><mo>=</mo><mi mathvariant="normal">∅</mi></math></span></span><script type="math/tex" id="MathJax-Element-10">U\cap V=\emptyset</script>.
+  </li>
+  <li>
+  Wywnioskuj z poprzednich zadań, że każdy graf skierowany jest rozłączną sumą silnych składowych spójnych. 
+  </li>
+  </ol>
+</li>
+<li>Zacznij samodzielnie przerabiać wszystkie przykłady ze strony 
+<a href="https://www.w3schools.com/html/">www.w3schools.com/html/</a>. Pod trzy tygodnie powinniście (czyli w okolicach 15 marca) znać wszystkie pokazane tam elementy.
+</li> 
+<li><strong>[6-kolumnowa siatka]</strong>. Zbuduj samodzielnie "grid system" oparty na podział na 6 kolumn równych szerokości. Odstępy między kolumnami powinien wynosić 1% szerokości nadrzędnego obiektu. System powinien zawierać klasy o nazwach col-1-6, col-2-6, ... , col-6-6. Zapisz ten system w oddzielnym pliku css o nazwie grig.css. Przetestuj jego działanie na czymś podobnym do pierwszego zadania (przed pierwszym wykładem).<br>
+Spróbuj rekurencyjnie zagłębić zbudowany system.
+</li>
+<li>Zacznij samodzielnie przerabiać materiał ze stron 
+<a href="https://www.w3schools.com/css/default.asp">www.w3schools.com/css/</a>  
+</li>
+<li>Zaprojektuj swoję kartę informacyjną. Inspiracji możesz szukać na stronie 
+<a href="https://www.w3schools.com/howto/howto_css_cards.asp">w3schools.com</a>.
+</li>
+<li>
+<div class="subpanel">
+  <strong>Pierwszy projekt.</strong> Budujemy portal o nazwie "Moje przygody z edukacją".
+  Ma on być złożony z kilku stron WWW. 
+  Strona główna zawierać ma linki do stron poświęconych poszczegółnym semestrom studiów oraz o Twoich aktywnych hobby (takich, które mają coś wspólnego z edukacją).
+  Na tych stronach mają się znajdować informacje o wszystkich kursach w któych brałeś udział w danym semestrze. Każdy opis ma zawierać krótkie informacje o tym czego się nauczyłeś na nim oraz co zamierzasz samodzielnie uzupełnić (taka lista "my ToDo").
+  <br>
+  Technologia: tylko HTML5 + CSS3; wszystko piszemy sami; nie stosujemy żadnych bibliotek.
+  Na wykładzie omówimy szczegóły projektu i pokażę przykład. 
+  <br>Termin: szkic ma być gotowy do dnia 16.03.2018, a całość do 30.03.2018 i oddane mają być prowadzącemu laboratoria w dniu ostatnich zajęć upływających przed tym terminem.
+  <br>UWAGA: (1) kody muszą być <strong>całkowicie</strong> poprawne. (2) zwróććie uwagę na poprawność stosowania znaczników semantycznych (3) spróbujcie stosować konsekwentnie zasadę CRAP. 
+</div>
+</li>
+<li>Zoptymalizuj kod CSS służący do wyświetlenia trójkąta skierowanego w prawą stronę (coś w tym stylu:▶, ale znacznie ładniej).</li> 
+<li>Zaprojektuj za pomocą css flagę polską. Pamiętaj, że studiujesz na uczelni technicznej</li> 
+<li>Zadania programistyczne I w języku JavaScript (robimy to na laboratoriach):
+  <ol>
+  <li>Napisz funkcję <code>suma</code>, która oblicza sumę dwóch liczb</li>
+  <li>Napisz wariant funkcji <code>suma</code>, którą możesz zastosować do dowolnej liczby argumentów, np. <code>suma(2,3,22,14)</code> (poczytaj o parametrze <code>arguments</code> funkcji).</li>
+  <li>[Fizz Buzz Test] Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.</li>
+  <li>Oprogramuj GCD</li>
+  <li>Oprogramuj Extended GCD</li>
+  </ol>
+</li>
+<li>Przepuść swoje kody przez jslint oraz google closure compliler</li>
+<li>Pokaż poprawność omówionej na wykładzie konstrukcji złotego podziału za pomocą liniki i cyrkla.
+</li>
+<li>Przenalizuj pod kątem zasady C.R.A.P i "Negative Spaces" strony osoby prowadzącej  laboratorium do tego wykładu na które jesteś zapisany.</li>
+<li>Zapisz kod ze strony <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/JSHideShow05.html">JSHideShow05.html</a> do pliku o nazwie accordion.js (pamiętaj o kodowaniu utf-8) w podkatalogu o nazwie js, podłącz go do strony testowej za pomocą polecenie &lt;script src='js/accordion.js'&gt;&lt;/script&gt; (w sekcji head) i przetestuj na elemencie typu accordion.
+</li> 
+<li>
+Napisz skrypt służący do wyrównywania wysokości elementów na stronie. 
+Do pobrania wysokości elementu <code>el</code> posłuż się funkcją <code>el.offsetHeight</code>,
+a do ustawienia wysokości może się posłużyć konstrukcją 
+<code>el.style.height = h + "px";</code>, gdzie <code>h</code> jest wyliczoną wysokością w pixelach. 
+</li>
+
+<li>Oprogramuj dwa przyciski służące do zmiany rozmiaru fontu elementów strony. 
+Wskazówka: <ol>
+<li>rozmiar fontu elementu <code>body</code> można oczytywać i zapisywać za pomocą <code>document.body.style.fontSize</code></li><li>przydać Ci się może funkcja <code>parseInt()</code></li><li>sprawdź jaką wartość mają wyrażenia <code>""||16</code> oraz  <code>24||16</code> (uwaga: 16px to domyślny rozmiar fontu większości przeglądarek).</li></ol>
+</li>
+
+<li>
+<div class="subpanel">
+<strong>Drugi Projekt</strong>. Projekt realizujemy w oparciu o Projekt 1, czyli nadal budujemy portal "Moje przygody z edukacją".
+<ol>
+<li>Realizujemy strony w technologii PHP. Opieramy go o generator stron, który realizujemy za pomocą obiektu PHP. Początek każdej strony  ma wyglądac mniej więcej tak:
+<pre>&lt;?php
+require_once(__DIR__."/PHP/MyPage.php");
+$P =  new myPage("Jan Kowalski: edukacja");
+$P-&gt;SetDescription("Główna strona witryny Jana " . 
+    "Kowalskiego poświęconej przygodom edukacyjnym.");
+echo $P-&gt;Begin();
+?&gt;
+&lt;header id="main-header"&gt;
+....
+&lt;/header&gt;
+</pre>
+a koniec mniej więcej tak
+<pre>&lt;?php echo $P-&gt;End();?&gt;
+</pre>
+</li>
+<li>
+Pliki css rozpoczynamy od reset.css. Następnie dodajemy, w miarę potrzeby, pliki grid.css i mojstyl.css
+</li>
+<li>Tym razem generujemy wszystkie strony. Uzupełniamy o swoje teksty, nie stosujemy "lorem ipsum..."</li>
+<li>Eliminujemy wszystkie usterki z Projektu 1.</li> 
+</ol>
+Termin: szkic ma być gotowy do dnia 27.04.2018, a całość do 11.05.2018 i oddane mają być prowadzącemu laboratoria w dniu ostatnich zajęć upływających przed tym terminem.
+<br>UWAGA: Obowiązują te same zasady poprawności co w projekcie 1. 
+<br>Szczegóły i używaną technologię omówimy sobie na wykładzie w dniu 5.04.2018.
+<br>UWAGA: oczywiście możecie stosować javascript.
+<br>UWAGA: oszczędzisz masę czasu, jeśli posłużysz się językiem SASS
+</div>
+</li>
+
+<li>Zbuduj okno z elementem <code>&lt;frame&gt;</code> zawierającym jeden element typu <code>textarea</code>, z dwoma przyciskami <code>button</code>. Po naciścięciu pierwszego przycisku okno ma wyliczyć liczbę liter we wprowadzonym tekście do <code>textarea</code> zaś drugi ma służyć do oczyszczenia <code>textarea</code> oraz starych wyliczeń.
+</li>
+
+<li>Zbuduj podobne okno do okna z poprzedniego zadania. Po naciśnięciu pierwszego przycisku wszystkie znaki we wprowadzonym  tekście z pierwszej kolumny poniższej tabeli mają być zastąpione znakami z drugiej kolumny.
+<table>
+  <tbody><tr><td>&amp;       </td><td> &amp;amp; </td></tr>
+  <tr><td>&lt;        </td><td> &amp;lt;  </td></tr>
+  <tr><td>&gt;        </td><td> &amp;gt;  </td></tr> 
+  <tr><td>"      </td><td> &amp;quot;</td></tr>
+  <tr><td> '          </td><td> &amp;#x27;</td></tr>
+  <tr><td>/           </td><td> &amp;#x2F;</td></tr>
+</tbody></table>
+Możesz posłuzyć się następującym wyrażeniem regularnym języka javascript:  /[&amp;&lt;&gt;"'\/]/g. Drugi przycisk ma służyć do kopiowania tekstu do schowka. To narzędzie może Ci się przydac do wyświetlania fragmentów kodu html na stronach html. 
+</li>
+<li>Rozważmy następujący styl:
+<pre>html { box-sizing: border-box;}
+*, *:before, *:after { box-sizing: inherit;}
+.row:after{ content: ""; clear: both; display: table;}
+.col{ float: left; width: 50%;} 
+</pre>
+Napisz kod w języku PHP, który wygeneruje grid złożony <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-11-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-87" style="width: 0.771em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.617em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.642em, 1000.62em, 2.41em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-88"><span class="mi" id="MathJax-Span-89" style="font-family: MathJax_Math-italic;">n</span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.691em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-11">n</script> wierszy oraz <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-12-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msup&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-90" style="width: 1.13em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.925em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.232em, 1000.92em, 2.41em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-91"><span class="msubsup" id="MathJax-Span-92"><span style="display: inline-block; position: relative; width: 0.925em; height: 0px;"><span style="position: absolute; clip: rect(3.179em, 1000.46em, 4.152em, -999.997em); top: -3.993em; left: 0em;"><span class="mn" id="MathJax-Span-93" style="font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; top: -4.403em; left: 0.515em;"><span class="mi" id="MathJax-Span-94" style="font-size: 70.7%; font-family: MathJax_Math-italic;">k</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 1.191em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mi>k</mi></msup></math></span></span><script type="math/tex" id="MathJax-Element-12">2^k</script> kolumnami z losowymi kolorami tła. Kolumny mają być generowanie rekurencyjnie. Tam ma, mniej wiecej wyglądać wygenerowany wiersz dla <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-13-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-95" style="width: 2.82em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.308em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.386em, 1002.26em, 2.41em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-96"><span class="mi" id="MathJax-Span-97" style="font-family: MathJax_Math-italic;">k</span><span class="mo" id="MathJax-Span-98" style="font-family: MathJax_Main; padding-left: 0.259em;">=</span><span class="mn" id="MathJax-Span-99" style="font-family: MathJax_Main; padding-left: 0.259em;">2</span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 1.003em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi><mo>=</mo><mn>2</mn></math></span></span><script type="math/tex" id="MathJax-Element-13">k=2</script>:
+<pre>&lt;div class="row"&gt;
+  &lt;div class="col"&gt;
+     &lt;div class="row"&gt;
+        &lt;div class="col" style="background: #3a2b3d"&gt;&amp;nbsp&lt;/div&gt;
+        &lt;div class="col" style="background: #b4d273"&gt;&amp;nbsp&lt;/div&gt;    
+     &lt;/div&gt;
+  &lt;/div&gt; 
+  &lt;div class="col"&gt;
+     &lt;div class="row"&gt;
+        &lt;div class="col" style="background: #665d32"&gt;&amp;nbsp&lt;/div&gt;
+        &lt;div class="col" style="background: #076da3"&gt;&amp;nbsp&lt;/div&gt;    
+     &lt;/div&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;
+</pre>
+Przetestuj zachowanie przeglądarek dla <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-14-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;20&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-100" style="width: 3.537em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.871em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.437em, 1002.82em, 2.41em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-101"><span class="mi" id="MathJax-Span-102" style="font-family: MathJax_Math-italic;">n</span><span class="mo" id="MathJax-Span-103" style="font-family: MathJax_Main; padding-left: 0.259em;">=</span><span class="mn" id="MathJax-Span-104" style="font-family: MathJax_Main; padding-left: 0.259em;">20</span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>=</mo><mn>20</mn></math></span></span><script type="math/tex" id="MathJax-Element-14">n=20</script> i <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-15-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mo&gt;&amp;#x2026;&lt;/mo&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;9&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-105" style="width: 6.15em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.023em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.386em, 1004.97em, 2.615em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-106"><span class="mi" id="MathJax-Span-107" style="font-family: MathJax_Math-italic;">k</span><span class="mo" id="MathJax-Span-108" style="font-family: MathJax_Main; padding-left: 0.259em;">=</span><span class="mn" id="MathJax-Span-109" style="font-family: MathJax_Main; padding-left: 0.259em;">1</span><span class="mo" id="MathJax-Span-110" style="font-family: MathJax_Main;">,</span><span class="mo" id="MathJax-Span-111" style="font-family: MathJax_Main; padding-left: 0.156em;">…</span><span class="mo" id="MathJax-Span-112" style="font-family: MathJax_Main; padding-left: 0.156em;">,</span><span class="mn" id="MathJax-Span-113" style="font-family: MathJax_Main; padding-left: 0.156em;">9</span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.309em; border-left: 0px solid; width: 0px; height: 1.191em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mn>9</mn></math></span></span><script type="math/tex" id="MathJax-Element-15">k=1,\ldots,9</script>. Możesz posłużyć się następującym kodem do wygenerowania losowych kolorów:
+<small>
+<pre>$rand = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+function RandomColor(){
+  global $rand;
+  return '#'.$rand[rand(0,15)].$rand[rand(0,15)].$rand[rand(0,15)].$rand[rand(0,15)].$rand[rand(0,15)].$rand[rand(0,15)];
+}
+</pre>
+</small>
+</li>
+<li>Zainstaluj kontroler gulp w środowisku node oraz gulp-sass. Przydać ci się mogą wskazówki umieszczone na stronie wykładu. </li>
+<li>Zastosuj gulp-sass'a do skompilowania następującego kodu języka SASS:
+<small>
+<pre>$topmenu-bg : #33b5e5;
+#topmenu{
+  background: lighten($topmenu-bg, 20%);
+  color: #222;
+  ul {
+    list-style: none;
+    li {
+      display: block;
+      &amp;.active {
+        color: #12d232;
+      }
+      a {
+        color: 10ea30;
+        &amp;:hover{
+          color: #ce1211;
+          }
+      }
+    }
+  }
+}
+</pre>
+</small>
+Przenalizuj wynik, pomyśl o uproszczeniu struktury css, popraw scss i ponownie skompiluj.
+</li>
+<li>Zrób podobny ekspryment z następującym kodem:
+<pre>%light-element{
+  background: lighten($topmenu-bg, 20%);
+  color : #333;
+  padding: .5em 1em;
+}
+.jasny-element{
+  @extend %light-element;
+  border : 1px solid red;
+}
+table.jasny-element{
+  @extend %light-element;
+  td {
+    padding: 0.25em;
+  }
+}
+</pre>
+Przenalizuj wynik.
+</li>
+<li>Przetestuj następujący kod SASS'a:
+<pre>@mixin setBgColPad($bg, $col, $pad){
+  background: $bg;
+  color     : $col;
+  padding   : (0.5)*$pad $pad;
+}
+
+.myDarkElement{
+  @include setBgColPad(#222, #eee, 1em);
+  font-size: 2em;
+  p {
+    padding: 1em;
+  }
+}
+
+.myLightElement{
+  @include setBgColPad(#eee, #222, 1.5em);
+  border: solid 2px red;
+  header {
+    color : #000;
+  }
+}
+</pre>
+</li>
+<li>Zbuduj samodzielnie stronę na której zanurzysz jakieś zdjęcie lub film w technologii 360 deg. Jak nie masz pomysłu, to możesz skorzystać ze strony <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W9/frames.html">frames.html</a></li>
+<li>
+Zabezpiecz systemem samodzielnie opracowanej CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) stronę zbudowaną w poprzednim punkcie. Ta Captch'a ma z bardzo dużym prawdopodobieństwe eliminować tych ludzi, którzy nie mają odpowiedniej wiedzy. Przykład: swoją stronę Q&amp;A zabezpieczyłem kodem sprawdzającym czy użytkownik umie mnożyć liczby zespolone (co mi wyeliminowało całkowicie ataki spamerskie). Wymyśl coś <strong>nietrywialnego</strong> - przez Twój test powiniem przejść student drugiego roku informatyki na WPPT. 
+</li> 
+
+<li>Włącz protokoł https w swoim lokalnym serwerze WWW. Jeśli korzystasz z xampp, to wskazówki możesz znaleźć na stronie <a href="https://gist.github.com/adnan360/ad2b1cfc44114ac6f91fbb668c76798d">adnan360/https-on-localhost.md</a>. Jeśli używasz Chrom'a i denerwują Cię komunikaty o próbie wyświetlenia niebezpiecznej strony, to odwiedź
+<code>chrome://flags/#allow-insecure-localhost</code>.
+</li>
+<li>
+Wyjaśnij działanie następującego kodu:
+<pre>imie = "Jola";
+var osoba = {
+  imie  : "Anna",
+  hello : function(){console.log(this.imie)}
+}
+osoba.hello();
+function wywolaj(f) {f()}
+wywolaj(osoba.hello);
+</pre>
+Uwaga: jeśli testujesz ten kod w środowisku Node, to pierwsza linijkę zmień na <code>global.imie="Jola";</code> 
+</li>
+<li>
+  Na stronie <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W6/test04.php">test04.php</a> znajduje się prosty licznik odwiedzin. Ma on dosyć poważną wadę - po każdym odświeżeniu strony strony licznik ten zwiększa się o 1. 
+  Użyj mechanizmu cookies do wyeliminowania tego błędu. [Autorem tego zadania jest dr M. Gębala.]
+</li>
+<li>
+Przeanalizuj kod z pliku <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W10/Lista.js">Lista.js</a>. Zbudowana tam jest lista z którą w linijce 49 zrobiliśmy coś dziwnego: zapętliliśmy ją. Narysuj graf zbudowanej struktury.
+A taraz coś poważniejszego: załóżmy, że znamy ograniczenie górne n na liczbę elementów listy. Zbuduj algorytm działający w czasie O(n) wykorzystujący O(1) pamięci, który sprawdza, czy dana lista jest zapętlona, czy też nie jest.  
+</li>
+<li>Użyj technologii localStorage i promises oraz dwóch wersji tego samego obrazka (jeden niskiej jakości, drugi bardzo dobrej jakości) do wyświetlenia obrazka wysokiej jakości na stronie.
+</li>
+<li>
+<div class="subpanel">
+  <strong>Trzeci projekt.</strong> Rozbudowujemy dotychczas budowany portal o funkcję opinii od użytkowników oraz kilku innych dodatków.
+  <ol>
+  <li>Opinie te mają być zbierane w prostej (może to być baza złożona z pojedynczej tabeli) bazie danych.</li>
+  <li>Dodawanie wpisów ma być chronione samodzielnie napisaną chaptcha, specyficzną dla naszego kierunku studiów (patrz Zadanie 25)</li>
+  <li>Stosując <code>mathjax</code> dodaj do opisów wykładów teoretycznych przenajmniej po jednym z najważniejszych wzorów które poznałeś na wykładzie</li>
+  <li>Kody CSS mają być napisane w języku SASS i skompilowane do jednego pliku. Przygotuj dwie wersje tych plików: deweloperską (porządnie sformatowaną) oraz produkcyjną (skompresowaną). Prowadzącemu laboratorium przekazać będziecie mieli również kody SASS'a. </li> 
+  <li>Do swojego zdjęcia zastosuj technologię localStorage. Jeśli używasz zdjęcia o rozmiarze większym niż 1Mb, to użyj obietnic do jego załadowania.</li>
+  </ol>
+  Projekt ma być oddany na ostatnim laboratorium. 
+  <br>
+  Oceniane będą następujące składniki:
+  <ol>
+  <li>Poprawność kodów HTML, CSS i PHP. Nie może być ani jednego błędu.</li>
+  <li>Jakość kodu: w szczególności zasady DRY, KISS, SRP; optymalizacja css; poprawne stosowanie znaczników semantycznych;</li>
+  <li>Estetyka: w szczególności spełnienie wszystkich wymagań CRAP; poprawny dobór kolorów; właściwy kontrast; rozsądny dobór fontów.</li>
+  <li>Ergonomia: zasada "Don't Let Me Think"; "Keep the noise down to a dull roar"</li>
+  </ol>
+  To jaką bazę danych zastosujecie - ustalcie z prowadzącym; ale jeśli zastosujecie jakąś namiastkę tekstową, to na ocenę 5.5 nie możecie liczyć. Ja preferuję do takich prostych projektów bazę MariaDB.
+</div>
+</li>
+
+<li>Zrozum kod ze strony <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W13/jQuery2.html">jQuery2.html</a> i przerób go na "Vanilla JavaScript"</li>
+<li>Poświęć jeden wieczór na przeczytanie i przerobienie wszystkich przykładów z książki Jacka Franklina, Russa Fergusona, <em>Beginning jQuery. From the Basics of jQuery toWriting your Own Plug-ins</em>, Second Edition.</li>
+</ol>
+
+</div>
+</div><!-- row -->
+
+
+<div class="row">		
+<div class="panel">
+<h2>Materiał omówiony na wykładzie</h2>
+
+<section class="subpanel">
+<h3>22.02.2018: Wstęp</h3>
+<ol>
+<li>Graf WWW:<br><img src="./Jacek Cichoń_ Nowoczesne Technologie WWW_files/bowtie-page.png" alt="Graf WWW" style="width:50%"><br>
+Jest to graf z pracy 
+<a href="https://pdfs.semanticscholar.org/b5d5/88298e6845b4bfd40ea779ce21e628239ef3.pdf">The Graph Structure in the Web – Analyzed on Different Aggregation Levels</a>
+</li>
+<li><a href="http://info.cern.ch/">First website</a></li>
+<li>Podstawowy szablon responsywnej strony HTML5:
+<pre class="panel">&lt;!DOCTYPE html&gt; 
+&lt;html lang="pl"&gt; 
+&lt;head&gt;  
+  &lt;meta charset="utf-8"&gt; 
+  &lt;title&gt;Tytul strony&lt;/title&gt; 
+  &lt;meta name="description" content="..."&gt;
+  &lt;meta name="author" content="..."&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+&lt;/head&gt; 
+&lt;body&gt;
+&lt;/body&gt; 
+&lt;/html&gt; 
+</pre>
+</li>
+<li>Model pudełkowy: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/TestBox.html">TestBox</a></li>
+<li>Znaczniki semantyczne HTML5: <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">
+h5d-sectioning-flowchart.pdf</a> (bez dosyć nowego znacznika &lt;main&gt;) 
+</li>
+<li>Ustalenie sposobu obliczania rozmiaru pudełka za pomocą css: 
+<pre>* { box-sizing: border-box;}
+</pre>
+</li>
+<li>Przykład pojemnika do otaczania strony:
+<pre class="panel">body{
+  background-color:#000;
+}
+#container{
+  width:100%;
+  max-width:940px;
+  margin:1em auto 0em auto;
+  background-color:#fff;
+  padding:0 0.5em;
+}
+</pre>
+</li>
+<li>Podstawowe jednostki css:
+<ol>
+<li> 1px : umowny pixel</li>
+<li> 1em : aktualna wysokość fontu (w danym elemencie) [pochodzenie nazwy: wysokość litery "M"]</li>
+<li> 1rem:  "root em", czyli wysokość fontu elementu <code>html</code> (od roku 2013)</li>
+</ol>
+</li>
+<li>Prosty dwu-kolumnowy resposywny grid uwzględniający paradygmat "mobile first":
+   <div class="row">
+   <div class="col-6-12 panel">
+   <h4>KOD CSS</h4>
+   <pre>   .row:after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+   [class*='col-'] {
+     float: left;
+     padding: 0 0.5em;
+     width: 100%;
+     margin-bottom:0.5em;
+   } 
+   @media screen and (min-width: 640px) {
+     .row+.row {
+       margin-top: 0.5em;
+     }
+     .col-1-2 {
+       width: 49.5%;
+       margin-right:1%;
+     }
+     .col-2-2 {
+       width: 100%;
+     }  
+     [class*='col-']:last-of-type {
+       margin-right:0;
+     }
+   }
+   </pre>
+   </div>
+   <div class="col-6-12 panel">
+   <h4>Sposób wykorzystania</h4>
+   <pre>   &lt;div class="row"&gt;
+     &lt;div class="col-1-2"&gt;
+       &lt;h2&gt;Kolumna 1a&lt;/h2&gt;
+     &lt;/div&gt;
+     &lt;div class="col-1-2"&gt;
+       &lt;h2&gt;Kolumna 2a&lt;/h2&gt;
+     &lt;/div&gt;
+   &lt;/div&gt; &lt;!-- row --&gt;
+   </pre>
+   </div>
+   </div><!-- row -->
+</li>
+</ol>
+
+<p>Uwaga: nie przejmujcie się, jeśli wszystkiego nie chwyciliście. Na następnym wykładzie omówimy <strong>raz jeszcze</strong> zamieszczone kody - tym razem dokładniej i spóbujemy zapoznać się ze wszystkimi detalami (linijka po linijce) i omówimy sobie dokładniej o co chodzi z css.
+</p>
+
+<h4>Wzór na obliczanie grida</h4>
+<ol class="panel">
+<li>Ustalamy procentową szerokość rynny <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-16-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;&amp;#x03B4;&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-114" style="width: 0.566em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.464em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.386em, 1000.46em, 2.41em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-115"><span class="mi" id="MathJax-Span-116" style="font-family: MathJax_Math-italic;">δ<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 1.003em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>δ</mi></math></span></span><script type="math/tex" id="MathJax-Element-16">\delta</script> i ustalamy liczbę kolumn <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-17-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-117" style="width: 0.771em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.617em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.642em, 1000.62em, 2.41em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-118"><span class="mi" id="MathJax-Span-119" style="font-family: MathJax_Math-italic;">n</span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.691em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-17">n</script>.</li>
+<li>Obliczmy <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-18-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;&amp;#x0394;&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mfrac&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;100&lt;/mn&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mi&gt;&amp;#x03B4;&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-120" style="width: 12.093em; display: inline-block;"><span style="display: inline-block; position: relative; width: 9.89em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.232em, 1009.79em, 2.769em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-121"><span class="mi" id="MathJax-Span-122" style="font-family: MathJax_Main;">Δ</span><span class="mo" id="MathJax-Span-123" style="font-family: MathJax_Main; padding-left: 0.259em;">=</span><span class="mfrac" id="MathJax-Span-124" style="padding-left: 0.259em;"><span style="display: inline-block; position: relative; width: 0.566em; height: 0px; margin-right: 0.105em; margin-left: 0.105em;"><span style="position: absolute; clip: rect(3.384em, 1000.31em, 4.152em, -999.997em); top: -4.403em; left: 50%; margin-left: -0.151em;"><span class="mn" id="MathJax-Span-125" style="font-size: 70.7%; font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; clip: rect(3.537em, 1000.41em, 4.152em, -999.997em); top: -3.635em; left: 50%; margin-left: -0.202em;"><span class="mi" id="MathJax-Span-126" style="font-size: 70.7%; font-family: MathJax_Math-italic;">n</span><span style="display: inline-block; width: 0px; height: 3.998em;"></span></span><span style="position: absolute; clip: rect(0.873em, 1000.57em, 1.232em, -999.997em); top: -1.278em; left: 0em;"><span style="display: inline-block; overflow: hidden; vertical-align: 0em; border-top: 1.3px solid; width: 0.566em; height: 0px;"></span><span style="display: inline-block; width: 0px; height: 1.078em;"></span></span></span></span><span class="mo" id="MathJax-Span-127" style="font-family: MathJax_Main;">(</span><span class="mn" id="MathJax-Span-128" style="font-family: MathJax_Main;">100</span><span class="mo" id="MathJax-Span-129" style="font-family: MathJax_Main; padding-left: 0.207em;">−</span><span class="mo" id="MathJax-Span-130" style="font-family: MathJax_Main; padding-left: 0.207em;">(</span><span class="mi" id="MathJax-Span-131" style="font-family: MathJax_Math-italic;">n</span><span class="mo" id="MathJax-Span-132" style="font-family: MathJax_Main; padding-left: 0.207em;">−</span><span class="mn" id="MathJax-Span-133" style="font-family: MathJax_Main; padding-left: 0.207em;">1</span><span class="mo" id="MathJax-Span-134" style="font-family: MathJax_Main;">)</span><span class="mi" id="MathJax-Span-135" style="font-family: MathJax_Math-italic;">δ<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-136" style="font-family: MathJax_Main;">)</span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.497em; border-left: 0px solid; width: 0px; height: 1.628em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">Δ</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo stretchy="false">(</mo><mn>100</mn><mo>−</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi>δ</mi><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-18">\Delta = \frac1n(100 - (n-1)\delta)</script></li>
+<li>Wzór na szerokość <code>col-k-n</code> : <code> width:</code> <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-19-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;&amp;#x22C5;&lt;/mo&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;&amp;#x0394;&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mo&gt;&amp;#x22C5;&lt;/mo&gt;&lt;mi&gt;&amp;#x03B4;&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-137" style="width: 8.968em; display: inline-block;"><span style="display: inline-block; position: relative; width: 7.328em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.335em, 1007.33em, 2.666em, -999.997em); top: -2.252em; left: 0em;"><span class="mrow" id="MathJax-Span-138"><span class="mi" id="MathJax-Span-139" style="font-family: MathJax_Math-italic;">k</span><span class="mo" id="MathJax-Span-140" style="font-family: MathJax_Main; padding-left: 0.207em;">⋅</span><span class="mi" id="MathJax-Span-141" style="font-family: MathJax_Main; padding-left: 0.207em;">Δ</span><span class="mo" id="MathJax-Span-142" style="font-family: MathJax_Main; padding-left: 0.207em;">+</span><span class="mo" id="MathJax-Span-143" style="font-family: MathJax_Main; padding-left: 0.207em;">(</span><span class="mi" id="MathJax-Span-144" style="font-family: MathJax_Math-italic;">k</span><span class="mo" id="MathJax-Span-145" style="font-family: MathJax_Main; padding-left: 0.207em;">−</span><span class="mn" id="MathJax-Span-146" style="font-family: MathJax_Main; padding-left: 0.207em;">1</span><span class="mo" id="MathJax-Span-147" style="font-family: MathJax_Main;">)</span><span class="mo" id="MathJax-Span-148" style="font-family: MathJax_Main; padding-left: 0.207em;">⋅</span><span class="mi" id="MathJax-Span-149" style="font-family: MathJax_Math-italic; padding-left: 0.207em;">δ<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.257em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.372em; border-left: 0px solid; width: 0px; height: 1.378em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mo>+</mo><mo stretchy="false">(</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>⋅</mo><mi>δ</mi></math></span></span><script type="math/tex" id="MathJax-Element-19">k\cdot \Delta + (k-1)\cdot\delta</script>;</li>
+<li>HINT: wyliczyć to trzeba z dokładnością do co najmniej 4 miejsc po przecinku.</li>
+</ol> 
+</section>
+
+<section class="subpanel">
+<h3>01.03.2018: CSS</h3>
+<ol>
+<li>Podstawowe składniki: elementy, klasy, pseudo-elementy, pseudo-klasy</li>
+<li>Składnia i selektory: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/CSS.html">CSS.html</a></li>
+<li><a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/Specificity.html">SPECYFICZNOŚĆ !!!!!</a></li>
+<li>Budowanie <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/menu.html">menu</a> z bazowego obiektu &lt;ul&gt;</li> 
+</ol>
+A to jest szkic możliwej realizacji pierwszego projektu:<br>
+<img src="./Jacek Cichoń_ Nowoczesne Technologie WWW_files/Projekt01.png" alt="Projekt 1"><br>
+Uwaga: jeszcze sporo trzeba popracować nad szatą graficzna, aby projekt ten spełniał podstawowe zasady poprawnych stron.
+</section>
+
+<section class="subpanel">
+<h3>08.03.2018: Grafika</h3>
+<ol>
+<li>Menu o ustalonej pozycji: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/menuFixed.html">menuFixed.html</a></li>
+<li>Złoty podział <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/GoldenRatioGrid.html">CSS.html</a> oraz wykorzystanie grida.</li>
+<li>
+Kolory, koło barw: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/kolory.html">kolory.html</a></li>
+<li>Wykorzystanie kolorów: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/WebColors.html">WebColors.html</a> na stronach WWW.</li> 
+<li>Zaczęliśmy przyglądać się językowi JavaScript.</li>
+</ol>
+<strong>Zadanie:</strong> Zainstaluj sobie <code>node.js</code> i zacznij korzystać z REPL. Podłącz node.js do swojego edytora tekstów.
+</section>
+
+<section class="subpanel">
+<h3>15.03.2018: HideAndShow + C.R.A.P.</h3>
+Pokazane nieżej strony nie są dopracowane - zwracajcie uwagę na kody JavaScript a nie na css.
+<ol>
+<li>Budowanie obiektu typu Accordion
+  <ol>
+  <li>Hide and show dla pojedynczego obiektu: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/JSHideShow00.html">JSHideShow00.html</a></li>
+  <li>Hide and show dla kilku obiektów obiektów: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/JSHideShow01.html">JSHideShow01.html</a> (ze złamaniem zasady DRY)</li>
+  <li>Ulepszone Hide and show dla kilku obiektu: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/JSHideShow02.html">JSHideShow02.html</a> - ulepszenie poprzedniego kodu. Uwaga: skorzystaliśmy z "closure".</li>
+  <li>ulepszenie poprzedniego kodu: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/JSHideShow03.html">JSHideShow03.html</a> - uproszczona obsługa</li>
+  <li>ulepszenie poprzedniego kodu: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/JSHideShow04.html">JSHideShow04.html</a> - ulepszona funkcja "createFunction"</li>
+  <li>ulepszenie poprzedniego kodu: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/JSHideShow05.html">JSHideShow05.html</a> - czyszczenie kodu (dopasowanie do wymagań jslinta)</li>
+  </ol>
+</li>
+<li>Prosta "Single Page Application": <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/SPA00.html">SPA00.html</a></li>
+<li>Zasada C.R.A.P. : <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/BussinessCard.html">BussinessCard.html</a></li>
+<li>Kontrast + "Negative Space" : <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W4/contrast.html">contrast.html</a></li>
+<li>Jedna z najgorszych stron na świecie: <a href="http://www.arngren.net/">www.arngren.net</a></li>
+</ol>
+</section>
+
+<section class="subpanel">
+<h3>12.03.2018: Varia</h3>
+<ol>
+<li>Wykorzystanie closure: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W5/closure.html">closure.html</a> (przyjrzyjcie się kodowi)</li>
+<li>Plik do przetestowania: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W5/closure.js">closure.js</a>  z IIFE oraz deklaracją <code>let</code> 
+</li>
+<li>Kolejne ulepszenie HideAdnShow: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W5/JSHideShow06.html">JSHideShow06.html</a> (c.d.n)</li>
+<li>O fontach: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W5/FontyEmbedd.html">FontyEmbedd.html</a></li>
+<li>Vertical Rythm: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W5/VerticalRythm.html">VerticalRythm.html</a> (uwaga: porządna realizacja tego celu wymaga dosyć dużej staranności - wkrótce do tego wrócimy).</li>
+<li>O typografii: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W5/Typografia.html">Typografia.html</a></li>
+<li>Przykład "landing page": <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W5/StartPageW.html">StartPageW.html</a></li>
+<li>Flex, CSS Grid i  zmienne css: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W5/Trends.html">Trends.html</a></li>
+</ol>
+</section>
+
+<section class="subpanel">
+<h3>05.04.2018: Pierwszy projekt i wstęp do PHP</h3>
+<ol>
+<li>Uwagi po pierwszym projekcie: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W6/UwagiPoProjekcie01.html">UwagiPoProjekcie01</a> (uwaga: traktuj tę stronę jako moje szybko redagowne notatki - pod względem poprawności jest ona kiepsko zrobiona)</li>
+<li>Plik z prostym kodem PHP
+<small>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;PHP intro&lt;/title&gt;
+  &lt;link rel="stylesheet" href="css/intro.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="container"&gt;
+&lt;?php 
+  $autor = "Jacek Cichoń";
+  echo "&lt;h1&gt;Jestem stroną wygenerowaną przez PHP&lt;/h1&gt;\n";
+  echo "&lt;p&gt;Tę piękną stronę zbudował {$autor}.&lt;/p&gt;\n";
+?&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</small>
+A to jest wyniki: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W6/PHPIntro01.php">PHPIntro01.php</a>.
+</li>
+<li>A to jest trochę bardziej rozbudowana wersja:
+<small>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;PHP intro&lt;/title&gt;
+  &lt;link rel="stylesheet" href="css/intro.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div id="container"&gt;
+
+&lt;?php 
+  function myDiv($txt, $class){
+    $s = "&lt;div class=\"wider {$class}\"&gt;\n";
+    $s.= "  " . $txt;
+    $s.= "\n&lt;/div&gt;\n";
+    return $s;
+  }
+  
+  function myCard($title, $info, $img=""){
+    $title = trim($title);
+    $img   = trim($img);
+    $s = "&lt;div class=\"card-info\"&gt;\n";
+    if ($title !==""){
+      $s.= "  &lt;header&gt;{$title}&lt;/header&gt;\n";
+    }
+    if ($img !== ""){
+      $s.= "  &lt;img src=\"img/{$img}\"&gt;\n";
+    }
+    $s.= "  &lt;p&gt;{$info}&lt;/p&gt;\n";
+    $s.= "&lt;/div&gt;\n";
+    return $s;
+  }
+?&gt;
+
+&lt;?php
+  $autor = "Jacek Cichoń";
+  echo "&lt;h1&gt;Jestem stroną wygenerowaną przez PHP&lt;/h1&gt;\n";
+  echo "&lt;p&gt; Tę piękną stronę zbudował {$autor}.&lt;/p&gt;\n";
+
+  echo myDiv("To jest niebieski div","blue");
+  echo myDiv("To jest czerwony div","red");
+  echo myDiv("To jest zielony div","green");
+
+  echo "&lt;div class='row'&gt;\n";
+  echo myCard(
+    "Wakacje 2016",
+    "Piękna i dosyć trudno dostępna laguna Balos na Krecie. Najłatwiej jest tam dostać się łodzią.",
+    "gr01.jpg");
+  echo myCard(
+    "Wakacje 2016",
+    "Drugie zdjęcie z laguny Balos",
+    "gr02.jpg");
+  echo "&lt;/div&gt;\n";
+  
+?&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</small>
+A to jest wyniki: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W6/PHPIntro02.php">PHPIntro02.php</a>.
+</li>
+<li>Następnie wydzieliliśmy pierwszy fragment kodu php do oddzielnego pliku.
+Całość można znaleźć w pliku <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W6/W6.ZIP">W6.ZIP</a></li>
+<li>Następnie zaczęliśmy omawiać konstrukcję obiektu PHP który ułatwi nam generowanie stron, ale zabrakło czasu, więc weźmiemy się za to ponownie na następnym wykładzie.</li>
+</ol>
+</section>
+
+<section class="subpanel">
+<h3>13.04.2018: Konstrukcja prostego frameworka</h3>
+<ol>
+<li>Zaczęliśmy od prostego rozwiązania: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W6/test01.php">test01.php</a>. Do wygenerowania nagłowka strony użyliśmy następującego, niezbyt dobrej jakości, kodu (plik myPage01.php):
+<small><pre>&lt;?php
+class MyPage {
+  private $Title = "";
+  public function __construct($Title = "") {
+    $this-&gt;Title = $Title;
+  }
+  public function Begin(){
+    $s = "&lt;!DOCTYPE html&gt;\n";
+    $s.= "&lt;html lang='pl'&gt;\n";
+    $s.= "&lt;head&gt;\n";
+    $s.= "&lt;meta charset='utf-8'&gt;\n";
+    $s.= "&lt;title&gt;" . $this-&gt;Title . "&lt;/title&gt;\n"; 
+    $s.= "&lt;meta name='author' content='Jacek Cichoń'&gt;\n";
+    $s.= "&lt;meta name='viewport' content = 'width=device-width, initial-scale=1.0'/&gt;\n";
+    $s.= "&lt;link rel='stylesheet' href='css/reset.css'&gt;\n";
+    $s.= "&lt;link rel='stylesheet' href='css/grid.css'&gt;\n";
+    $s.= "&lt;link rel='stylesheet' href='css/mystyle.css'&gt;\n";
+    $s.= "&lt;script src='js/application.js'&gt;&lt;/script&gt;\n"; 
+    $s.= "&lt;/head&gt;\n";
+    $s.= "&lt;body&gt;\n";
+    $s.= "&lt;div id='container'&gt;\n";
+    return $s;
+  }
+  public function End(){
+    $s = "&lt;/div&gt;\n";
+    $s.= "&lt;/body&gt;\n";
+    $s.= "&lt;/html&gt;";   
+    return $s;    
+  }
+}
+?&gt;
+</pre></small>
+</li>
+<li>Po serii przekształceń osiągnęliśmy znacznie bardziej elastyczny kod (<a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W6/test04.php">test04.php</a>).
+Dołączyliśmy również kilka procedur pomocniczych: prosty licznik odwiedzin, prosty log, oraz obiekt do mierzenia czasu wykonania skrytpu.
+Wszystkie kody znależć możesz w pliku: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W6/test04.zip">test04.zip</a>. 
+Przeanalizuj starannie ten kod i zobacz jak możesz go dopasować do realizacji swojej wersji drugiego projektu.
+</li>
+<li>W pliku test04.zip, w podkatalogu css, znajduje się plik reset.css. Możesz go użyć ro realizacji drugiego projektu. Możesz również posłużyć się stylem Eric A. Meyer'a ze strony <a href="https://meyerweb.com/eric/tools/css/reset/">https://meyerweb.com/eric/tools/css/reset/</a>
+</li><li>Uwaga: Walidator css zgłasza błędy w pliku mystyle.css z katalogu css. Jest to spowodowane użyciem zmiennych w tym pliku. Tego typu błedami możecie się na razie nie przejmować. Wkrótce omówimy język SASS, który wyeliminuje potrzebę używania  zmiennych. Poznamy też póżniej metody automatycznej eliminacji zmiennych.
+</li>
+</ol>
+</section>
+
+<section><h3>19.04.2018: Generowanie Menu i SASS</h3>
+<ol>
+<li>
+Kod PHP służący do generowania menu na stronie <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W7/testHMenu.php">testHMenu.php</a>: <br>
+<div style="background:#fff;padding:1em;">
+<code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br>$MAIN_MENU_TMPL&nbsp;</span><span style="color: #007700">=&lt;&lt;&lt;EOT<br></span><span style="color: #DD0000">&lt;ul&nbsp;id="mainmenu"&gt;<br>&nbsp;&nbsp;{{M1}}<br>&nbsp;&nbsp;{{M2}}<br>&nbsp;&nbsp;&lt;li&gt;Dydaktyka<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{M3.1}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{M3.2}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{M3.3}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;Badania<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{M4.1}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{M4.2}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{M4.3}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&lt;/li&gt;<br>&lt;/ul&gt;<br></span><span style="color: #007700">EOT;<br><br></span><span style="color: #0000BB">$MAIN_MENU_ITEMS&nbsp;</span><span style="color: #007700">=&nbsp;[<br>&nbsp;&nbsp;</span><span style="color: #DD0000">"M1"&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">"Strona&nbsp;głowna"</span><span style="color: #007700">,</span><span style="color: #DD0000">"index.php"</span><span style="color: #007700">],<br>&nbsp;&nbsp;</span><span style="color: #DD0000">"M2"&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">"Kadra"</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">"kadra.php"</span><span style="color: #007700">],<br>&nbsp;&nbsp;</span><span style="color: #DD0000">"M3.1"&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">"Osoby"</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">"listaosob.php"</span><span style="color: #007700">],<br>&nbsp;&nbsp;</span><span style="color: #DD0000">"M3.2"&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">"Konsultacje"</span><span style="color: #007700">,&nbsp;&nbsp;</span><span style="color: #DD0000">"konsultacje.php"</span><span style="color: #007700">],<br>&nbsp;&nbsp;</span><span style="color: #DD0000">"M3.3"&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">"Dyplomowe"</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">"pracedyplomowe.php"</span><span style="color: #007700">],<br>&nbsp;&nbsp;</span><span style="color: #DD0000">"M4.1"&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">"Seminaria"</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">"seminaria.php"</span><span style="color: #007700">],<br>&nbsp;&nbsp;</span><span style="color: #DD0000">"M4.2"&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">"Publikacje"</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">"publikacje.php"</span><span style="color: #007700">],<br>&nbsp;&nbsp;</span><span style="color: #DD0000">"M4.3"&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">"Projekty"</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">"projekty.php"</span><span style="color: #007700">]<br>];<br><br></span><span style="color: #0000BB">$MAIN_MENU_LI_1&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'&lt;li&nbsp;class="active"&gt;{{T}}&lt;/li&gt;'</span><span style="color: #007700">;<br></span><span style="color: #0000BB">$MAIN_MENU_LI_2&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'&lt;li&gt;&lt;a&nbsp;href="{{H}}"&gt;{{T}}&lt;/a&gt;&lt;/li&gt;'</span><span style="color: #007700">;<br></span><span style="color: #FF8000">/**<br>*<br>*&nbsp;@param&nbsp;string&nbsp;$active&nbsp;identyfikator&nbsp;elementu&nbsp;menu&nbsp;który&nbsp;nie&nbsp;jest&nbsp;linkiem<br>*&nbsp;@return&nbsp;string&nbsp;<br>*/<br></span><span style="color: #007700">function&nbsp;</span><span style="color: #0000BB">generujMenu2</span><span style="color: #007700">(</span><span style="color: #0000BB">$active</span><span style="color: #007700">)&nbsp;{<br>&nbsp;&nbsp;global&nbsp;</span><span style="color: #0000BB">$MAIN_MENU_TMPL</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$MAIN_MENU_ITEMS</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$MAIN_MENU_LI_1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$MAIN_MENU_LI_2</span><span style="color: #007700">;<br>&nbsp;&nbsp;</span><span style="color: #0000BB">$s&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$MAIN_MENU_TMPL</span><span style="color: #007700">;<br>&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$MAIN_MENU_ITEMS&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$array</span><span style="color: #007700">)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$mkey&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"{{"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"}}"</span><span style="color: #007700">;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$item&nbsp;</span><span style="color: #007700">=&nbsp;(</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">$active</span><span style="color: #007700">)?&nbsp;</span><span style="color: #0000BB">$MAIN_MENU_LI_1&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$MAIN_MENU_LI_2</span><span style="color: #007700">;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$item&nbsp;</span><span style="color: #007700">=&nbsp;(string)</span><span style="color: #0000BB">str_replace</span><span style="color: #007700">([</span><span style="color: #DD0000">"{{T}}"</span><span style="color: #007700">,</span><span style="color: #DD0000">"{{H}}"</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">$array</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">);<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$s&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">=&nbsp;(string)</span><span style="color: #0000BB">str_replace</span><span style="color: #007700">(</span><span style="color: #0000BB">$mkey</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$s</span><span style="color: #007700">);<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$s</span><span style="color: #007700">;<br>}<br></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></div>
+</li>
+<li>Menu oparte o Javascript: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W7/ResponsiveMenu.html">WWW/W7/ResponsiveMenu.html</a></li>
+<li>Instalacja GULP - SASS'a: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W8/GulpInstall.html">GulpInstall.html</a></li>
+<li>Plik gulpfile.js którym posługiwaliśmy się na wykładzie<br>
+<div style="background:#fff;padding:1em;">
+<code><span style="color: #000000">
+var&nbsp;gulp&nbsp;=&nbsp;require('gulp');<br>var&nbsp;sass&nbsp;=&nbsp;require('gulp-sass');<br><br>gulp.task('hello',&nbsp;function()&nbsp;{<br>&nbsp;&nbsp;console.log('&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;');<br>&nbsp;&nbsp;console.log('Hello&nbsp;Jacek');<br>&nbsp;&nbsp;console.log('&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;');<br>});<br><br>var&nbsp;sassOptions&nbsp;=&nbsp;{<br>&nbsp;&nbsp;errLogToConsole:&nbsp;true,<br>&nbsp;&nbsp;outputStyle:&nbsp;'expanded',<br>&nbsp;&nbsp;precision:&nbsp;8<br>};<br><br>var&nbsp;sassOptionsCompressed&nbsp;=&nbsp;{<br>&nbsp;&nbsp;errLogToConsole:&nbsp;true,<br>&nbsp;&nbsp;outputStyle:&nbsp;'compressed',<br>&nbsp;&nbsp;precision:&nbsp;8<br>};<br><br>gulp.task('callsass',&nbsp;function(){<br>&nbsp;&nbsp;return&nbsp;gulp.src('scss/HomePage.scss')<br>&nbsp;&nbsp;&nbsp;&nbsp;.pipe(sass(sassOptions))&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;.on('error',&nbsp;&nbsp;sass.logError)<br>&nbsp;&nbsp;&nbsp;&nbsp;.pipe(gulp.dest('css'));<br>});<br><br>gulp.task('obserwuj',function()&nbsp;{<br>&nbsp;&nbsp;gulp.watch('scss/*.scss',&nbsp;['callsass'])<br>&nbsp;&nbsp;.on('change',&nbsp;function(event)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('File&nbsp;'&nbsp;+&nbsp;event.path&nbsp;+&nbsp;'&nbsp;was&nbsp;'&nbsp;+&nbsp;event.type);}<br>&nbsp;&nbsp;&nbsp;);<br>});</span>
+</code></div>
+</li>
+<li>Zawartość katalogu scss: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W8/scss.zip">scss.zip</a></li>
+<li>Strona do testowania wygenerowanego css: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W8/index.html">index.html</a></li>
+</ol>
+</section>
+
+<section><h3>26.04.2018: Frames i Forms</h3>
+<ol>
+<li>Zanurzanie obiektów z innych stron - otwórz stronę <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W9/frames.html">frames.html</a>; otwórz konsolę; przetestuj działanie funkcji <code>refresh();</code> <code>startRefresh();</code> i <code>stopRefresh();</code>
+</li>
+<li>Strona z formą i druga strona obsługująca dane z pierwszej formy: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W9/form02a.php">form02.php</a>
+</li>
+<li>Metody sanityzacji i sprawdzania poprawności otrzymywanych danych: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W9/uwagi.php">uwagi.php</a>. Pamiętaj o nasttępującej zasadzie:
+<div class="tablica" style="font-size:1.5em; text-align:center;">NIGDY NIE UFAJ OTRZYMANYM DANYM !!!</div>
+</li>
+<li>Kody plików z formami omawianymi na wykładzie: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W9/W9.ZIP">W9.ZIP</a></li>
+</ol>
+</section>
+
+<section><h3>10.05.2018: Ciasteczka i local storage</h3>
+<ol>
+<li>Ciasteczka: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W10/Ca.php">Ca.php</a> + kody: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W10/W10Cookie.ZIP">W10Cookie.ZIP</a> (przeanalizuj samodzielnie kod z pliku PHP/Cab).</li>
+<li>Local storage: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W10/localStorage.html">localStorage.html</a></li>
+<li>Wykorzystanie local storage do zapamiętania obrazka w pamięci lokalnej przeglądarki: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W10/localStorageIMG.html">localStorageIMG.html</a>. Przeanalizuj kod z tej strony i poświęć trochę czasu na zrozumienie znaczenia słowa kluczowego <code>this</code> w javascript.</li>
+</ol>
+</section>
+
+<section><h3>17.05.2018: Sesje i obietnice</h3>
+<ol>
+<li>Sesje: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W10/session1.php">session1.php</a> oraz kody <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W10/sesja.ZIP">sesja.ZIP</a>.<br>Zróć uwagę na:
+<ol>
+<li><code>session_start();</code>: to musi być użyte przed wygenerowaniem dowolnego tekstu (np. poleeniem echo ..)</li>
+<li>przekierowania: <code>header("location: PLIK");</code>: przed tym też nic nie powinno być wygenerowane</li>
+<li>Przyjrzyj się cookie</li> 
+</ol>
+</li>
+<li>Obietnice - I   : <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W11/obietnice1.html">obietnice1.html</a></li>
+<li>Obietnice - II  : <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W11/obietnice2.html">obietnice2.html</a>: zwróć uwagę na równoległe (<code>Promise.all</code>) oraz sekwencyjne wywołanie obietnic (<code>promise.then(promise).then(promise) ...</code>) </li>
+<li>Obietnice - III : <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W11/obietnice3.html">obietnice3.html</a>: zwróć uwagę na użycie data-src i data-desc</li>
+<li>Obietnice - IV  : <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W11/obietnice4.html">obietnice4.html</a>: 
+<ol>
+<li>zwróć uwagę na konstrukcję "modal window"; </li>
+<li>przyjrzyj się uważnie funkcji <code>function podstawPodElem (elem)</code> i zobacz co oznacza w jej kodzie słowo kluczowe <code>this</code>; wyjaśnij co się tutaj dzieje (czyli dlaczego <code>this</code> wskazuje obiekt <code>img</code>); </li>
+<li>przyjrzyj się również jednoczesnej animacji obrazka i legendy; </li>
+<li>po co w funkcji <code> podstawPodElem (elem)</code> jest polecenie window.scrollTo(0,0)?</li>
+</ol>
+</li>
+</ol>
+</section>
+
+<section><h3>24.05.2018: Bazy danych</h3>
+<ol>
+<li>Intro: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W12/dbstart.html">dbstart.html</a></li>
+<li>Wyświetlanie i dodawanie rekordów: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W12/db01main.php">bd01main.php</a></li>
+<li>Prosty panel administratora: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W12/db03main.php">bd03main.php</a></li>
+<li>Wszystkie kody z wykładu: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W12/W12.ZIP">W12.ZIP</a>. Gdyby wam coś nie chodziło, to sprawdźcie w pierwszej kolejności UPPER/lower case w nazwach plików; jak to nic nie da, to
+posłużcie się kodem php
+<pre>  ini_set('display_errors', 1);
+  ini_set('display_startup_errors', 1);
+  error_reporting(E_ALL);
+</pre>
+do wyświetlania potencjalnych błędów.
+  </li>
+<li>Arkusza kalkulacyjnego którym trochę bawiliśmy się na wykładzie nie załączam - jeszcze do niego wrócimy</li>
+</ol>
+</section>
+
+<section><h3>30.05.2018: MathJax, jQuery</h3>
+<ol>
+
+<li>Postawy mathjax'a: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W13/mathjax.html">mathjax.html</a></li>
+
+<li>Przykład:
+<pre>var i =1;
+console.log((i++)+ " one");
+setTimeout(function (){console.log( (i++) + " TWO"); }, 0);
+console.log((i++) + " three");
+console.log((i++) + " four");
+console.log((i++) + " five");
+</pre>
+Wewnętrzny stos, API i kolejka (przeanalizuj uważnie kod z tej strony i zinterpetuj jego działanie).
+</li>
+
+<li>MathJax + SPA z wykorzystaniem fetch: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W13/mathjaxSinglePage.html">mathjaxSinglePage.html</a></li>
+<li>jQuery: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W13/jQuery.html">jQuery.html</a></li>
+<li>Prototypowanie w jQuery: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W13/jQuery1a.html">jQuery1a.html</a>  (przeanalizuj uważnie kod z tej strony; ulepsz go) </li>
+<li><a href="http://vanilla-js.com/">"Vanilla JS"</a></li>
+<li>Efekt paralaksy:  <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W13/jQuery2.html">jQuery2.html</a></li>
+</ol>
+</section>
+
+<section><h3>08.06.2018: Optymalizacja</h3>
+<ol>
+<li>Znaczniki "tel", "email", alementy ARIA, accessibility: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W14/Uwagi.html">Uwagi.html</a></li>
+<li>Zapomniałem wam opowiedzieć o bardzo złym pomyśle (z punktu widzenia assesibility) stosowania do <code>font-size</code> jednostek vw: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W14/Bad.html">Bad.html</a>: wyobraź sobie, że masz <span style="color: #cca;">kłopoty ze wzrokiem</span> i spróbuj zwiększyć rozmiar czcionek na tamtej stronie.</li>
+<li>RESTfull WEB  Api: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W14/UseApiKadra.php">UseApiKadra.php</a></li>
+<li>Kod <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W14/apiKadra.zip">apiKadra.zip</a>. Przetestuj polecenia 
+<code>https://cs.pwr.edu.pl/apiKadra.php</code> oraz <code>https://cs.pwr.edu.pl/apiKadra.php?NICK=MGE</code> i następnie spróbuj samodzielnie się dobrać do tego serwisu.
+</li>
+
+<li>Asysta grafitacyjna: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W14/proca/index.html">proca</a>.
+Wyświetl w debugerze zakładkę <code>Aplication</code> i odczytaj plik manifest.json.
+Spróbuj na swoim telefonie otworzyć tę stronę i przypnij ją do ekranu startowego.
+Na następnym, ostatnim, wykładzie przekształcimy tę aplikację na Progresive Web Application. 
+A na razie zainstaluj sobie wtyczkę Lighhouse oraz Web Server for Chrome (200 OK).
+</li> 
+</ol>
+</section>
+
+<section><h3>14.06.2018: Progresive Web Applications</h3>
+<ol>
+<li>Rozbudowania wersja  <a href="https://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W15/index.html">Procy grawitacyjnej</a>.
+oraz wszystkie potrzebne pliki <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W15/Proca.zip">Proca.zip</a>.</li>
+<li>Uwagi końcowe o css, złych stylach oraz JavaScript: <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W15/Uwagi.html">Uwagi</a></li>
+</ol>
+
+</section>
+
+</div><!-- panel -->
+</div><!-- row -->
+<!--?php phpinfo();? -->
+
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84302571-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: MathJax_AMS, sans-serif;"></div></div></body></html>

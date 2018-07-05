@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W9/frames.html -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>IFrames</title>
+
+<script src="./IFrames_files/vrview.min.js.pobrane"></script>
+<style>
+#container{
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background : #333;
+  color: white;
+  padding : 1em;
+}
+
+a {color:gold; text-decoration:none;}
+#myIFrame{
+  width: 100%;
+  margin: 0;
+  border: 1px solid blue;
+  height: 10em;
+  frameborder  : 0;
+  scrolling    : auto;
+}
+.embed-container {  
+  width: 100%;
+  margin: 0;
+  border: 1px solid red;
+  scrolling    : auto;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+<h1>Ramki</h1>
+iframe ≡ inline frame (ramka wbudowana)
+<br>
+Konstrukcja
+<pre>&lt;iframe id = "myIFrame" src="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/W6/test04.php"&gt;
+</pre>
+Styl
+<pre>#myIFrame{
+  width: 100%;
+  margin: 0;
+  border: 2px solid #555;
+  height: 15em;
+  frameborder  : 0;
+  scrolling    : auto;
+}
+</pre>
+
+<iframe id="myIFrame" src="./IFrames_files/test04.html">
+<!--iframe id = "myIFrame" src="http://localhost/WWW/W6/test04.php"-->
+<!--iframe id = "myIFrame" src="../W8/index.html"-->
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<p>Zanurzenie innej strony</p>
+<p>SEO: Nie używaj iframe's na stronie głównej</p>
+
+<script>
+var x = document.getElementById('myIFrame');
+function refresh(){
+  x.src = x.src;
+}
+var idstop;
+function runRefresh(){
+  idstop = setInterval(refresh, 2000);
+}
+function stopRefresh(){
+  clearInterval(idstop);
+}
+</script>
+
+<h2>Zanurzanie wideo z youtuba</h2>
+<h3>Normalne wideo</h3>
+<div class="embed-container">
+<iframe width="560" height="315" src="./IFrames_files/3x9mkzdVYYs.html" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</div>
+
+
+<h3>Wideo 360°</h3>
+<div class="embed-container">
+<iframe width="560" height="315" src="./IFrames_files/kNjOrluVWjg.html" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+
+
+<h2>Zanurzanie fotografii 360°</h2>
+ 
+<p>Serwis: <a href="https://kuula.co/">kuula.co</a></p>
+Skrypt:
+<pre>&lt;script 
+  src="https://static.kuula.io/embed.js" 
+  data-kuula="https://kuula.co/share/7lzx2?fs=1&amp;vr=0&amp;thumbs=1&amp;chromeless=0&amp;logo=0" 
+  data-width="100%" 
+  data-height="320px"&gt;
+&lt;/script&gt;
+</pre>
+<script src="./IFrames_files/embed.js.pobrane" data-kuula="https://kuula.co/share/7lzx2?fs=1&amp;vr=0&amp;thumbs=1&amp;chromeless=0&amp;logo=0" data-width="100%" data-height="320px"></script><iframe frameborder="0" scrolling="no" allowfullscreen="true" allow="vr,gyroscope,accelerometer,fullscreen" src="./IFrames_files/7lzx2.html" style="border: none; max-width: 100%; width: 100%; height: 320px;"></iframe>
+
+</div>
+
+
+
+</body></html>

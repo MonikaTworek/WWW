@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/TestBox.html -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+  background : #777;
+  font-size: 16px;
+}
+
+h1{ 
+  font-size: 3.5em;
+}
+
+h2{ 
+  font-size: 2.5em;
+}
+
+h3{ 
+  font-size: 2.0em;
+}
+
+body style{
+  display:block; 
+  white-space: pre;
+}
+
+#wrapper{
+  width: 90%;
+  max-width: 960px;
+  margin: 10px auto;
+  background: white;
+  padding: 0.5em;
+}
+
+.row{
+  margin-top: 15px;
+}
+
+.row:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.left{
+  float: left;
+  width: 60%;
+  margin: 0% 1%;
+  box-sizing: border-box;
+  border: solid 1px #ccc;
+  padding: 0.5em;
+  background: #fafaff;
+  float: left;
+}
+
+.right{
+  float: left;
+  width: 38%;
+  margin: 0%;
+  box-sizing: border-box;
+  border: solid 1px #ccc;
+  padding: 0.5em;
+  background: #fafaff;
+  float: left;
+}
+
+img{
+  max-width:80%;
+  margin: 1em auto 1em auto;
+  display:block;
+}
+
+footer{
+  font-size: 0.75em;
+  margin-top: 2rem;
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+
+<h1>Model pudełkowy (box model)</h1>
+
+<img src="./TestBox_files/box_model.png">
+
+<h3>Legenda</h3>
+<ol>
+<li>content: treść</li>
+<li>padding: wypełnienie (passe-partout)</li>
+<li>border: obramowanie</li>
+<li>margin: margines (przeźroczysty)</li>
+</ol>
+
+<h2>Przykład</h2>
+
+<div class="row">
+
+<div class="left">
+
+	<div class="Box">
+	&lt;div class="Box"&gt;
+	</div>
+
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.  
+<span class="InlineBox">&lt;span class="InlineBox"&gt;</span> Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra,  <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/TestBox.html#">link</a> per inceptos himenaeos.
+Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum <a href="http://cs.pwr.edu.pl/cichon/2017_18_b/WWW/TestBox.html#">sociis</a> natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam
+	</p>
+
+</div>
+
+<div class="right">
+<h3>To są style ramki i obiektu span.</h3>
+<p>Możesz edytować i testować poniższy fragemnt css.</p> 
+<style contenteditable="">
+.Box{
+  background: #00f;
+  color: white;
+  margin: 10px;
+  border: solid 2px #79796a;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.InlineBox{
+  background: #ff0022;
+  color: white;
+  margin: 5px;
+  border: solid 1px #555;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-weight:bold;
+  color: #aa0000;
+}
+
+a:hover{
+  color: #0000ff;
+}
+</style>
+</div>
+
+</div>
+
+
+
+</div></body></html>
